@@ -5,9 +5,9 @@ author: "Rafael Martins"
 comments: true
 ---
 
-O diretório de dados padrão do docker é '/var/lib/docker'. Neste diretório todas as imagens, volumes, etc., são armazenadas e, ao longo do tempo, a capacidade  de armazenamento pode não atender a demanda necessária para a utilização do Docker em seu servidor. Uma alternativa neste caso é montar um disco somente para essa finalidade.
+Ao trabalhar com docker é provavel que em algum momento falte espaço suficiente  na partição raiz para armazenar novos contêineres do Docker. Uma alternativa neste caso é montar um disco somente para essa finalidade.
 
-É possível alterar facilmente o local de armazenamento padrão do Docker criando o arquivo 'daemon.json' e descrever qual o novo local que o docker apontará. Você pode seguir as seguintes etapas:
+O diretório de dados padrão do docker é ‘/var/lib/docker’ e é possível alterar facilmente o local de armazenamento padrão criando o arquivo ‘daemon.json’ para descrever qual o novo local que o docker irá armazenar seus arquivos.  Como fazer:
 
 #### alterar para superusuário:
 ```
