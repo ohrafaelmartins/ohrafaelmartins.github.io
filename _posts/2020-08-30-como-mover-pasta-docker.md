@@ -1,9 +1,8 @@
-
-
 ---
 layout: post
-title: "#DevOps Como mover o diretório de dados padrão do docker para outro local no Linux"
+title:  "DevOps - Como mover o diretório de dados padrão do docker para outro local no Linux"
 author: "Rafael Martins"
+comments: true
 ---
 
 O diretório de dados padrão do docker é '/var/lib/docker'. Neste diretório todas as imagens, volumes, etc., são armazenadas e, ao longo do tempo, a capacidade  de armazenamento pode não atender a demanda necessária para a utilização do Docker em seu servidor. Uma alternativa neste caso é montar um disco somente para essa finalidade.
