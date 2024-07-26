@@ -3,14 +3,82 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cronômetro</title>
-    <script src="js/cronometro.js"></script>
+    <meta name="description" content="Guia de viagem para o Norte da Argentina. Economize até 50% com nosso guia completo, incluindo roteiros, câmbio, e dicas para viajar de carro.">
+    <meta name="keywords" content="guia de viagem, Norte da Argentina, ebook, roteiros, câmbio, Western Union, viajar de carro, economizar na viagem, documentos para viajar na Argentina">
+    <meta name="author" content="Seu Nome">
+    <title>Guia de Viagem Norte da Argentina - Economize até 50% com Nosso Guia</title>
+    <link rel="stylesheet" href="topo.css">
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="cronometro.css">
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
 </head>
 <body>
-    <h1>Cronômetro</h1>
-    <div id="cronometro">00:00:00</div>
-    <button onclick="iniciarCronometro()">Iniciar</button>
-    <button onclick="pausarCronometro()">Pausar</button>
-    <button onclick="zerarCronometro()">Zerar</button>
+    <div id="cronometro">
+        <p>Fique de olho, a oferta termina em <span class="timer" id="countdown"></span></p>
+    </div>
+    <header>
+        
+        <div class="header-content">
+            <h1 class="highlightt">
+                Descubra os destinos imperdíveis do <span class="highlightt-norte">Norte da Argentina</span> e viaje com total confiança, aproveitando <span class="highlightt-economia">até 50% de economia</span> com o nosso guia especializado.
+            </h1>
+            <div class="promessas">
+                <div class="promessa-item">
+                    <span class="number">1</span>
+                    <div class="promessa-text">Explore destinos imperdíveis e descubra segredos para uma viagem inesquecível.</div>
+                </div>
+                <div class="promessa-item">
+                    <span class="number">2</span>
+                    <div class="promessa-text">Aproveite dicas valiosas para maximizar sua experiência e economizar com eficiência.</div>
+                </div>
+                <div class="promessa-item">
+                    <span class="number">3</span>
+                    <div class="promessa-text">Saiba informações essenciais sobre câmbio, pedágios, segurança, estradas e muito mais.</div>
+                </div>
+            </div>
+        
+            <div class="mockup">
+                <img src="mockup-ebook.png" alt="Mockup do Ebook">
+            </div>
+        </div>
+    </header>
+
+
+    <main>
+        <section class="promessa">
+            <div class="promo-box">
+                <h2>APENAS R$ 23,97</h2>
+                <button>Compre Agora</button>
+            </div>
+        </section>
+    </main>
+
+    <script>
+        function startCountdown(duration, display) {
+            let timer = duration, minutes, seconds;
+            setInterval(function () {
+                minutes = parseInt(timer / 60, 10);
+                seconds = parseInt(timer % 60, 10);
+
+                minutes = minutes < 10 ? "0" + minutes : minutes;
+                seconds = seconds < 10 ? "0" + seconds : seconds;
+
+                display.textContent = minutes + ":" + seconds;
+
+                if (--timer < 0) {
+                    timer = duration;
+                    document.querySelector('.promo-box').style.display = 'block';
+                }
+            }, 1000);
+        }
+
+        window.onload = function () {
+            // let tenMinutes = 60 * 10,
+            let tenMinutes = 15,
+                display = document.querySelector('#countdown');
+            startCountdown(tenMinutes, display);
+        };
+    </script>
 </body>
 </html>

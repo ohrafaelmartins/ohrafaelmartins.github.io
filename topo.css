@@ -1,0 +1,38 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #f0f0f0;
+}
+
+header {
+    background: rgba(255, 255, 255, 0.9);
+    color: #333;
+    padding: 3em 1em 2em 1em;
+    text-align: center;
+    border-bottom: 2px solid #00aaff;
+}
+
+.header-content {
+    position: relative;
+    z-index: 1;
+    max-width: 70%;
+    margin: 0 auto;
+}
+
+.mockup img {
+    width: 80%;
+    max-width: 20%;
+    margin-top: 1em;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media (max-width: 768px) {
+    .mockup img { width: 90%; max-width: 300px; }
+}
+
+@media (max-width: 480px) {
+    .mockup img { width: 100%; max-width: 250px; }
+}
