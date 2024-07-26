@@ -11,28 +11,52 @@ header {
     padding: 3em 1em 2em 1em;
     text-align: center;
     border-bottom: 2px solid #00aaff;
+    position: relative;
+    max-width: 80%;
+    margin: 0 auto;
+    margin-top: 20px;
+    border-radius: 20px;
 }
 
 .header-content {
-    position: relative;
-    z-index: 1;
-    max-width: 70%;
+    max-width: 80%;
     margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.promessas, .mockup {
+    flex: 1;
+    margin: 0 1em;
+}
+
+.promessas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .mockup img {
-    width: 80%;
-    max-width: 20%;
-    margin-top: 1em;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+    width: 100%;
+    height: auto;
 }
 
 @media (max-width: 768px) {
-    .mockup img { width: 90%; max-width: 300px; }
+    .header-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .promessas, .mockup {
+        margin: 1em 0;
+        max-width: 80%;
+    }
 }
 
 @media (max-width: 480px) {
-    .mockup img { width: 100%; max-width: 250px; }
+    .promessas, .mockup {
+        max-width: 80%;
+    }
 }

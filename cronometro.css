@@ -10,6 +10,7 @@
 #cronometro p {
     margin: 0;
     font-size: 1.1em;
+    font-family: 'Roboto', sans-serif;
 }
 
 .timer {
@@ -27,3 +28,5 @@
 @media (max-width: 480px) {
     #cronometro p { font-size: 0.9em; }
 }
+
+

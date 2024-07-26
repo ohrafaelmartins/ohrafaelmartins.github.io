@@ -1,63 +1,118 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Guia de viagem para o Norte da Argentina. Economize até 50% com nosso guia completo, incluindo roteiros, câmbio, e dicas para viajar de carro.">
-    <meta name="keywords" content="guia de viagem, Norte da Argentina, ebook, roteiros, câmbio, Western Union, viajar de carro, economizar na viagem, documentos para viajar na Argentina">
+    <meta name="description"
+        content="Guia de viagem para o Norte da Argentina. Economize até 50% com nosso guia completo, incluindo roteiros, câmbio, e dicas para viajar de carro.">
+    <meta name="keywords"
+        content="guia de viagem, Norte da Argentina, ebook, roteiros, câmbio, Western Union, viajar de carro, economizar na viagem, documentos para viajar na Argentina">
     <meta name="author" content="Seu Nome">
     <title>Guia de Viagem Norte da Argentina - Economize até 50% com Nosso Guia</title>
     <link rel="stylesheet" href="topo.css">
     <link rel="stylesheet" href="header.css">
     <link rel="stylesheet" href="cronometro.css">
     <link rel="stylesheet" href="estilo.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+    <link rel="stylesheet" href="conteudo.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Montserrat:wght@400;700&display=swap">
+
 </head>
+
 <body>
     <div id="cronometro">
         <p>Fique de olho, a oferta termina em <span class="timer" id="countdown"></span></p>
     </div>
+
     <header>
-        
         <div class="header-content">
             <h1 class="highlightt">
-                Conheça os destinos imperdíveis do norte da Argentina e economize até 50% em sua viagem de carro com total confiança.
+                Conheça os destinos imperdíveis do norte da Argentina e economize até 50% em sua viagem de carro com
+                total confiança.
             </h1>
             <div class="promessas">
                 <div class="promessa-item">
-                    <span class="number">1</span>
-                    <div class="promessa-text">Explore destinos imperdíveis e descubra segredos para uma viagem inesquecível.</div>
+                    <span class="number">✔</span>
+                    <div class="promessa-text">Explore destinos imperdíveis e descubra segredos para uma viagem
+                        inesquecível.</div>
                 </div>
                 <div class="promessa-item">
-                    <span class="number">2</span>
-                    <div class="promessa-text">Aproveite dicas valiosas para maximizar sua experiência e economizar com eficiência.</div>
+                    <span class="number">✔</span>
+                    <div class="promessa-text">Aproveite dicas valiosas para maximizar sua experiência e economizar com
+                        eficiência.</div>
                 </div>
                 <div class="promessa-item">
-                    <span class="number">3</span>
-                    <div class="promessa-text">Saiba informações essenciais sobre câmbio, pedágios, segurança, estradas e muito mais.</div>
+                    <span class="number">✔</span>
+                    <div class="promessa-text">Saiba informações essenciais sobre câmbio, pedágios, segurança, estradas
+                        e muito mais.</div>
                 </div>
             </div>
-        
             <div class="mockup">
                 <img src="mockup-ebook.png" alt="Mockup do Ebook">
             </div>
         </div>
     </header>
 
-
     <main>
         <section class="promessa">
-            <div class="promo-box">
+            <div class="promo-box" id="promo-box">
                 <h2>APENAS R$ 23,97</h2>
                 <button>Compre Agora</button>
             </div>
         </section>
+
+        <section class="conteudo-ebook">
+            <h2>Sobre o Conteúdo do Ebook</h2>
+            <div class="highlight highlight-norte">Norte Argentino</div>
+            <p>Geografia, Clima, fauna, flora, vinhos, pratos típicos e arquitetura.</p>
+
+            <div class="highlight highlight-planejamento">Planejamento</div>
+            <p>Documentos, dicas, quando ir, roteiro, itinerário, internet, segurança, conforto, itens essenciais,
+                aplicativos úteis, como chegar, mapas, pontos de apoio, postos de combustível, etc.</p>
+
+            <div class="highlight highlight-dinheiro">Dinheiro e Finanças</div>
+            <p>Câmbios, Western Union, Cartões, Saques, Estimativa de custos, como economizar.</p>
+
+            <div class="highlight highlight-veiculo">Veículo e Rodovias</div>
+            <p>Documentos obrigatórios do Veículo, estradas e rodovias, sinalização, pedágios, condução em grandes
+                altitudes, combustível e itens obrigatórios do veículo, etc.</p>
+
+            <div class="highlight highlight-destinos">Destinos</div>
+            <p>Cidades, pontos turísticos, altitude, localização, infraestrutura, preços.</p>
+        </section>
+
+        <section class="sobre-autor">
+            <div class="autor-container">
+                <img src="foto-autor.jpg" alt="Foto do Autor" class="autor-foto">
+                <div class="autor-info">
+                    <h2>Sobre o Autor</h2>
+                    <p>Olá, eu sou [Nome do Autor], um apaixonado por viagens e expert em roteiros pelo norte da Argentina. Com anos de experiência em explorar e descobrir os melhores destinos, estou aqui para compartilhar meu conhecimento e ajudar você a aproveitar ao máximo sua viagem. Neste guia, você encontrará dicas valiosas, roteiros detalhados e tudo o que precisa saber para uma jornada inesquecível.</p>
+                    <p>Espero que você aproveite este guia e tenha uma viagem incrível!</p>
+                    <p><strong>[Nome do Autor]</strong></p>
+                </div>
+            </div>
+        </section>
+
+        
     </main>
+
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div class="promo-box">
+                <h2>APENAS R$ 23,97</h2>
+                <button>Compre Agora</button>
+            </div>
+        </div>
+    </div>
 
     <script>
         function startCountdown(duration, display) {
             let timer = duration, minutes, seconds;
-            setInterval(function () {
+            const promoBox = document.getElementById('promo-box');
+            promoBox.style.display = 'none';
+
+            const interval = setInterval(function () {
                 minutes = parseInt(timer / 60, 10);
                 seconds = parseInt(timer % 60, 10);
 
@@ -67,18 +122,32 @@
                 display.textContent = minutes + ":" + seconds;
 
                 if (--timer < 0) {
-                    timer = duration;
-                    document.querySelector('.promo-box').style.display = 'block';
+                    clearInterval(interval);
+                    promoBox.style.display = 'block';
+                    document.getElementById('modal').style.display = 'flex';
                 }
             }, 1000);
         }
 
         window.onload = function () {
-            // let tenMinutes = 60 * 10,
-            let tenMinutes = 15,
-                display = document.querySelector('#countdown');
-            startCountdown(tenMinutes, display);
+            let nineSeconds = 600, display = document.querySelector('#countdown');
+            startCountdown(nineSeconds, display);
+
+            // Modal functionality
+            const modal = document.getElementById('modal');
+            const closeModal = document.querySelector('.modal .close');
+
+            closeModal.onclick = function () {
+                modal.style.display = 'none';
+            }
+
+            window.onclick = function (event) {
+                if (event.target == modal) {
+                    modal.style.display = 'none';
+                }
+            }
         };
     </script>
 </body>
+
 </html>
