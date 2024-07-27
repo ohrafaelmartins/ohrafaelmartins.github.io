@@ -131,3 +131,9 @@
     }
 }
 
+
+.price-red {
+    color: var(--secondary-color);   
+    font-size: 2em;
+    font-weight: 900;
+}
