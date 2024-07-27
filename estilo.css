@@ -185,6 +185,8 @@
     background-color: #90caf9;
     padding: 4em 0;
     text-align: center;
+    font-size: 1.4em;
+    text-align: left;
 }
 
 .author-content {
@@ -209,6 +211,8 @@
     height: 150px;
     margin-right: 0;
     margin-bottom: 1em;
+    border: 1px solid;
+    border-radius: 50%;
 }
 
 .author-info {
