@@ -18,10 +18,32 @@
     <link rel="stylesheet" href="cronometro.css">
     <link rel="stylesheet" href="modal.css">
     <link rel="stylesheet" href="topo.css">
+    <link rel="stylesheet" href="depoimentos.css">
+
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Montserrat:wght@400;700&display=swap">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <!-- Script do Facebook Pixel -->
+    <script>
+        !function (f, b, e, v, n, t, s) {
+            if (f.fbq) return; n = f.fbq = function () {
+                n.callMethod ?
+                    n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+            };
+            if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
+            n.queue = []; t = b.createElement(e); t.async = !0;
+            t.src = v; s = b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t, s)
+        }(window, document, 'script',
+            'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', 'SEU_ID_DO_PIXEL'); // Substitua pelo seu ID do Pixel
+        fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+            src="https://www.facebook.com/tr?id=SEU_ID_DO_PIXEL&ev=PageView&noscript=1" /></noscript>
+    <!-- Fim do Script do Facebook Pixel -->
 
 </head>
 
@@ -32,8 +54,8 @@
     <header>
         <div class="header-content">
             <h1 class="highlightt">
-                EXCLUSIVO: <span class="exclusivo">ECONOMIZE ATÉ 50% EM SUA VIAGEM DE CARRO PARA O NORTE DA
-                    ARGENTINA</span>
+                EXCLUSIVO: <span class="exclusivo">ECONOMIZE ATÉ 50% EM SUA VIAGEM DE CARRO PARA O </span> NORTE DA
+                ARGENTINA
             </h1>
 
             <div class="promessas">
@@ -53,8 +75,9 @@
                         e muito mais.</div>
                 </div>
 
-                <a href="#adquirir-ebook" class="btn-cta">Adquira nosso eBook guia de viagem e comece a planejar sua
-                    jornada agora!</a>
+                <a href="#adquirir-ebook" class="btn-cta" onclick="trackEvent('ClicouAdquirirEbook')">
+                    Adquira o GUIA DE VIAGEM e comece a planejar sua jornada agora!
+                </a>
 
 
             </div>
@@ -68,76 +91,175 @@
     <main>
 
         <section class="conteudo-ebook">
-            <h2>Sobre o Conteúdo do Ebook</h2>
+            <h2>Conheça o conteúdo do guia de viagem:</h2>
 
-            <div class="highlight">
-                <i class="fas fa-check-circle"></i> <strong>Planejamento Detalhado</strong>
+            <div class="grid-container">
+                <div class="item">
+                    <div class="check-icon">
+                        <h3><i class="fas fa-check-circle"></i> Planejamento Detalhado</h3>
+                    </div>
+                    <p>Saiba tudo sobre documentos necessários, dicas práticas, e o melhor roteiro e itinerário para sua
+                        viagem. Além disso, oferecemos conselhos sobre internet, segurança, conforto e muito mais para
+                        garantir que você esteja completamente preparado.</p>
+                </div>
+
+                <div class="item">
+                    <div class="check-icon">
+                        <h3><i class="fas fa-check-circle"></i> Gestão de Dinheiro e Finanças </h3>
+                    </div>
+                    <p>Aprenda sobre câmbio de moedas, uso de cartões e saques. Nosso guia também inclui uma estimativa
+                        de custos e dicas valiosas sobre como economizar durante a sua viagem.</p>
+                </div>
+
+                <div class="item">
+                    <div class="check-icon">
+                        <h3><i class="fas fa-check-circle"></i> Informações Sobre Veículo e Rodovias </h3>
+                    </div>
+                    <p>Obtenha informações essenciais sobre documentos obrigatórios do veículo, estradas, rodovias e
+                        sinalização. Saiba como lidar com pedágios, conduzir em grandes altitudes e garantir que seu
+                        veículo esteja preparado para a jornada.</p>
+                </div>
+
+                <div class="item">
+                    <div class="check-icon">
+                        <h3><i class="fas fa-check-circle"></i> Destinos Imperdíveis</h3>
+                    </div>
+                    <p>Explore as principais cidades e pontos turísticos do Norte da Argentina. Informações detalhadas
+                        sobre altitude, localização, infraestrutura e preços ajudarão você a planejar uma viagem
+                        adaptada às suas preferências.</p>
+                </div>
             </div>
-            <p>Saiba tudo sobre <strong>documentos necessários, dicas práticas</strong>, e o melhor <strong>roteiro e
-                    itinerário</strong> para sua viagem. Além disso, oferecemos conselhos sobre <strong>internet,
-                    segurança, conforto</strong> e muito mais para garantir que você esteja completamente preparado.</p>
-
-            <div class="highlight">
-                <i class="fas fa-check-circle"></i> <strong>Gestão de Dinheiro e Finanças</strong>
-            </div>
-            <p>Aprenda sobre <strong>câmbio de moedas, uso de cartões</strong> e <strong>saques</strong>. Nosso guia
-                também inclui uma <strong>estimativa de custos</strong> e dicas valiosas sobre como economizar durante a
-                sua viagem.</p>
-
-            <div class="highlight">
-                <i class="fas fa-check-circle"></i> <strong>Informações Sobre Veículo e Rodovias</strong>
-            </div>
-            <p>Obtenha informações essenciais sobre <strong>documentos obrigatórios do veículo</strong>,
-                <strong>estradas, rodovias e sinalização</strong>. Saiba como lidar com <strong>pedágios</strong>,
-                conduzir em grandes altitudes e garantir que seu veículo esteja preparado para a jornada.
-            </p>
-
-            <div class="highlight">
-                <i class="fas fa-check-circle"></i> <strong>Destinos Imperdíveis</strong>
-            </div>
-            <p>Explore as principais <strong>cidades e pontos turísticos</strong> do Norte da Argentina. Informações
-                detalhadas sobre <strong>altitude, localização, infraestrutura</strong> e <strong>preços</strong>
-                ajudarão você a planejar uma viagem adaptada às suas preferências.</p>
-
         </section>
 
 
         <!-- Seção Promessa -->
         <section class="promessa">
             <div class="oferta">
-                <span class="oferta-text">APENAS</span>
-                <span class="oferta-red">R$ 27,00</span>
-                <button>Compre Agora</button>
+                <p class="price-strikethrough">DE R$47,00 POR APENAS</p>
+                <p class="acesso-imediato">ACESSO IMEDIATO</p>
+                <p class="price-large">R$ 27,00</p>
+                <button onclick="trackEvent('ClicouComprar')">Compre Agora</button>
             </div>
         </section>
 
-        <section class="sobre-autor">
-            <div class="autor-container">
-                <img src="mockup-ebook.png" alt="Foto do Autor" class="autor-foto">
-                <div class="autor-info">
-                    <h2>Sobre o Autor</h2>
-                    <p>Olá, eu sou [Nome do Autor], um apaixonado por viagens e expert em roteiros pelo norte da
-                        Argentina. Com anos de experiência em explorar e descobrir os melhores destinos, estou aqui para
-                        compartilhar meu conhecimento e ajudar você a aproveitar ao máximo sua viagem. Neste guia, você
-                        encontrará dicas valiosas, roteiros detalhados e tudo o que precisa saber para uma jornada
-                        inesquecível.</p>
-                    <p>Espero que você aproveite este guia e tenha uma viagem incrível!</p>
-                    <p><strong>[Nome do Autor]</strong></p>
+        <section class="depoimentos">
+            <h2>Depoimentos</h2>
+
+            <div class="grid-container">
+                <div class="depoimento">
+                    <div class="avatar">
+                        <img src="avatar1.jpg" alt="Avatar 1">
+                    </div>
+                    <div class="texto">
+                        <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nec odio ipsum.
+                            Suspendisse
+                            cursus
+                            malesuada facilisis."</p>
+                        <span class="autor">- João Silva</span>
+                    </div>
+                </div>
+
+                <div class="depoimento">
+                    <div class="avatar">
+                        <img src="avatar2.jpg" alt="Avatar 2">
+                    </div>
+                    <div class="texto">
+                        <p>"Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis
+                            egestas."</p>
+                        <span class="autor">- Maria Souza</span>
+                    </div>
+                </div>
+
+                <div class="depoimento">
+                    <div class="avatar">
+                        <img src="avatar3.jpg" alt="Avatar 3">
+                    </div>
+                    <div class="texto">
+                        <p>"Fusce molestie laoreet leo, nec volutpat nisi ultricies at. Proin consequat ex eget mauris
+                            dignissim."</p>
+                        <span class="autor">- José Oliveira</span>
+                    </div>
+                </div>
+
+                <div class="depoimento">
+                    <div class="avatar">
+                        <img src="avatar4.jpg" alt="Avatar 4">
+                    </div>
+                    <div class="texto">
+                        <p>"Aliquam erat volutpat. Nullam vestibulum hendrerit mi a mattis. Proin suscipit, velit ut
+                            vestibulum
+                            fringilla, quam velit ultricies arcu."</p>
+                        <span class="autor">- Ana Santos</span>
+                    </div>
                 </div>
             </div>
         </section>
 
+        <section class="author-section">
+            <div class="author-content">
+                <h2 class="section-title">Sobre o Autor</h2>
+                <div class="author-info">
+                    <img src="mockup-ebook.png" alt="Foto do Autor" class="author-photo">
+                    <div class="author-details">
+                        <h3 class="author-name">John Doe</h3>
+                        <p class="author-description">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
+                            hendrerit lectus auctor odio sollicitudin, in rutrum metus
+                            facilisis. Nullam vehicula mi in lectus faucibus, sit amet
+                            consectetur libero sagittis. Cras efficitur dui nec ultricies
+                            ultricies.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
 
         <!-- Seção de Garantia -->
         <section class="garantia">
             <div class="garantia-content">
                 <h2>GARANTIA DE 7 DIAS COM RISCO ZERO!</h2>
-                <p>Ainda não tem certeza? Não se preocupe!</p>
-                <p>Se o conteúdo descrito acima não for o mesmo que você receber, você tem 7 dias de garantia e
-                    devolverei
-                    seu dinheiro sem burocracia!</p>
+
+                <p>Ainda tem dúvidas? Não se preocupe!</p>
+
+                <p>
+                    Se o conteúdo não corresponder ao que você esperava, oferecemos uma garantia de 7 dias.
+
+                </p>
+
+                <p>
+                    Se não ficar satisfeito, devolveremos seu dinheiro sem burocracia!
+                </p>
+
             </div>
         </section>
+
+        <section class="faq">
+            <div class="conteudo-ebook">
+                <h2>Dúvidas Frequentes</h2>
+                <div class="grid-container">
+                    <div class="item">
+                        <h3><i class="fas fa-question-circle"></i> Quanto tempo após o pagamento terei acesso ao guia de
+                            viagem?</h3>
+                        <p>Imediato após a aprovação do pagamento.</p>
+                    </div>
+                    <div class="item">
+                        <h3><i class="fas fa-question-circle"></i> Em quais programas eu vou conseguir usar?</h3>
+                        <p>Todo e qualquer leitor de PDF.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="duvidas-whatsapp">
+            <h2>AINDA COM DÚVIDAS?</h2>
+            <p>ME CHAMA NO WHATSAPP!</p>
+            <p>Caso ainda tenha alguma dúvida, clique no botão abaixo e me chame no WhatsApp. Vamos conversar! 🙂</p>
+            <a href="https://wa.me/SEUNUMERODOTELEFONE" class="btn-whatsapp" onclick="trackEvent('ClicouChamarWhatsapp')">Quero tirar uma dúvida</a>
+        </section>
+        
+        
+
 
 
     </main>
@@ -146,17 +268,30 @@
             <span class="close">&times;</span>
             <p class="price-strikethrough">DE R$47,00 POR APENAS</p>
             <p class="price-large">R$27,00</p>
-            <button class="cta-button">Garanta agora o seu guia</button>
+            <button class="cta-button" onclick="trackEvent('ClicouComprar')">Garanta agora o seu guia</button>
         </div>
     </div>
 
 
 
     <script>
+        function trackEvent(event) {
+            console.log(`Evento disparado: ${event}`);
+
+            // Disparar evento para o Facebook Pixel
+            if (event === 'ClicouAdquirirEbook') {
+                fbq('track', 'ClicouAdquirirEbook');
+            } else if (event === 'ClicouComprar') {
+                fbq('track', 'ClicouComprar');
+            } else if (event === 'CronometroExpirou') {
+                fbq('track', 'CronometroExpirou');
+            }
+
+            // Aqui você pode adicionar mais lógica se necessário
+        }
+
         function startCountdown(duration, display) {
             let timer = duration, minutes, seconds;
-            const promoBox = document.getElementById('promo-box');
-            modal.style.display = 'none';
             const interval = setInterval(function () {
                 minutes = parseInt(timer / 60, 10);
                 seconds = parseInt(timer % 60, 10);
@@ -165,20 +300,25 @@
                 display.textContent = minutes + ":" + seconds;
                 if (--timer < 0) {
                     clearInterval(interval);
-                    modal.style.display = 'block';
                     document.getElementById('modal').style.display = 'flex';
+
+                    // Disparar evento CronometroExpirou quando o cronômetro expirar
+                    trackEvent('CronometroExpirou');
                 }
             }, 1000);
         }
+
         window.onload = function () {
-            let nineSeconds = 599, display = document.querySelector('#countdown');
+            let nineSeconds = 99, display = document.querySelector('#countdown');
             startCountdown(nineSeconds, display);
-            // Modal functionality
+
             const modal = document.getElementById('modal');
             const closeModal = document.querySelector('.modal .close');
+
             closeModal.onclick = function () {
                 modal.style.display = 'none';
             }
+
             window.onclick = function (event) {
                 if (event.target == modal) {
                     modal.style.display = 'none';

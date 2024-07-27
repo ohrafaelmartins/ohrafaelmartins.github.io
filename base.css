@@ -1,25 +1,45 @@
+* {
+    font-family: 'Barlow Condensed', sans-serif;
+}
+
 body {
-    font-family: var(--font-primary);
+
     background-color: #f4f4f4;
     margin: 0;
     padding: 0;
 }
 
-img {
-    width: 100%; /* Garantir que a imagem se ajuste ao container */
-    height: auto;
-    max-width: 100%; /* Impede que a imagem ultrapasse a largura do container */
+.mockup {
+    max-width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-/* Media Queries */
+.mockup img {
+    max-width: 30%;
+    height: auto;
+}
+
 @media (max-width: 768px) {
     body {
         font-size: 1em;
+    }
+
+    .mockup img {
+        max-width: 50%;
+        height: auto;
     }
 }
 
 @media (max-width: 480px) {
     body {
         font-size: 0.9em;
+    }
+
+    .mockup img {
+        max-width: 70%;
+        height: auto;
     }
 }

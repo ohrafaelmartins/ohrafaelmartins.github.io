@@ -16,7 +16,7 @@ for arquivo in "$diretorio"/*.css; do
     nome_arquivo=$(basename "$arquivo")
     
     # Adiciona a mensagem e o conteúdo do arquivo ao arquivo de saída
-    echo "Aqui esta meu código $nome_arquivo memorizar o estado atual: " >> "$arquivo_saida"
+    echo "Aqui esta meu código $nome_arquivo memorizar o estado atual para atualizar as mudancas que eu fiz: " >> "$arquivo_saida"
     cat "$arquivo" >> "$arquivo_saida"
     echo "---" >> "$arquivo_saida"
   fi

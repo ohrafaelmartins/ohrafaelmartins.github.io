@@ -1,4 +1,11 @@
-/* Header */
+:root {
+    --color-primary: #F7C242;
+}
+
+.check-icon i {
+    color: var(--color-primary);
+}
+
 header {
     background: #333 url('bg.svg') repeat;
     color: #fff;
@@ -9,7 +16,6 @@ header {
 header h1 {
     font-size: 2.5em;
     margin: 0;
-    font-family: var(--font-primary);
 }
 
 header nav {
@@ -21,21 +27,17 @@ header nav a {
     text-decoration: none;
     margin: 0 1em;
     font-size: 1.2em;
-    font-family: var(--font-primary);
 }
 
 header nav a:hover {
     text-decoration: underline;
 }
 
-/* Seção Promessa */
 .promessa {
-    background-color: #000;
-    background-image: url('bg.svg');
+    background: #000 url('bg.svg') no-repeat;
     background-size: cover;
-    background-repeat: no-repeat;
     color: #fff;
-    padding: 2em;
+    padding: 1em;
     text-align: center;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     box-sizing: border-box;
@@ -49,42 +51,35 @@ header nav a:hover {
 
 .oferta-text,
 .oferta-red {
-    display: block;
-}
-
-.oferta-text {
     font-size: 1.2em;
-    color: #fff;
-    font-family: var(--font-primary);
     margin-bottom: 0.2em;
 }
 
 .oferta-red {
     font-size: 2.5em;
     color: #e74c3c;
-    font-family: var(--font-primary);
     font-weight: bold;
     margin-bottom: 1em;
 }
 
 .oferta button {
-    background-color: #F7C242;
+    background-color: var(--color-primary);
     color: #000;
     border: none;
-    padding: 0.75em 1.5em;
-    font-size: 1.1em;
+    padding: 1.5em 3em;
+    font-size: 1.3em;
     cursor: pointer;
-    border-radius: 5px;
-    transition: background-color 0.3s, color 0.3s;
-    font-family: var(--font-primary);
+    border-radius: 8px;
+    transition: background-color 0.3s, color 0.3s, transform 0.3s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .oferta button:hover {
-    background-color: #000;
-    color: #F7C242;
+    background-color: #0077cc;
+    color: #fff;
+    transform: scale(1.1);
 }
 
-/* Estilos Globais */
 .promessa-text {
     font-size: 1.5em;
     line-height: 1.5;
@@ -92,7 +87,6 @@ header nav a:hover {
 
 .intro-text {
     font-size: 2.2em;
-    color: var(--color-text-primary);
     margin-bottom: 2em;
 }
 
@@ -116,12 +110,11 @@ header nav a:hover {
     margin-right: 0.5em;
 }
 
-/* Estilo do Botão */
 .btn-cta {
     display: inline-block;
     padding: 1em 2em;
     font-size: 1.2em;
-    color: #fff;
+    color: #000;
     background-color: var(--color-primary);
     border: none;
     border-radius: 5px;
@@ -138,11 +131,6 @@ header nav a:hover {
     color: #000;
 }
 
-.btn-cta:active {
-    background-color: var(--color-primary-dark);
-}
-
-/* Media Queries */
 @media (max-width: 768px) {
     header h1 {
         font-size: 2em;
@@ -167,7 +155,7 @@ header nav a:hover {
 
     .oferta button {
         font-size: 1em;
-        padding: 0.75em 1em;
+        /* padding: 0.75em 1em; */
     }
 }
 
@@ -198,6 +186,6 @@ header nav a:hover {
 
     .oferta button {
         font-size: 0.9em;
-        padding: 0.5em 1em;
+        /* padding: 0.5em 1em; */
     }
 }
