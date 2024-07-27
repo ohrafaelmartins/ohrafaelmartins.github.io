@@ -1,0 +1,25 @@
+body {
+    font-family: var(--font-primary);
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    width: 100%; /* Garantir que a imagem se ajuste ao container */
+    height: auto;
+    max-width: 100%; /* Impede que a imagem ultrapasse a largura do container */
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    body {
+        font-size: 1em;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        font-size: 0.9em;
+    }
+}

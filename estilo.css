@@ -1,52 +1,52 @@
-/* Modal */
 .modal {
-    display: none; /* Oculto por padrão */
+    display: none;
     position: fixed;
-    top: 0;
     left: 0;
+    top: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.5); /* Fundo semi-transparente */
-    z-index: 1000; /* Garantir que o modal fique acima de outros elementos */
-    align-items: center;
-    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 1000;
+    overflow: auto;
 }
 
-/* Modal Content */
 .modal-content {
-    background: #fff;
-    border-radius: 8px;
+    background-color: #fff;
+    color: #333;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    padding: 2em;
-    max-width: 90%;
-    width: 500px; /* Ajuste o tamanho conforme necessário */
-    position: relative;
 }
 
-/* Close Button */
 .close {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    font-size: 1.5em;
+    color: #333;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
     cursor: pointer;
 }
 
-/* Promo Box */
-.promo-box {
-    background-color: #f4f4f4;
-    border: 2px solid #00aaff;
-    padding: 1.5em;
-    border-radius: 8px;
+.promo-box,
+.sobre-autor {
     text-align: center;
     margin: 2em auto;
-    max-width: 80%; /* Ajuste a largura máxima */
+    font-family: var(--font-primary);
 }
 
-.promo-box h2 {
+
+.promo-box h2,
+.sobre-autor .autor-info h2 {
     font-size: 1.5em;
+    color: #0033a0;
     margin: 0 0 0.5em;
-    color: #333;
 }
 
 .promo-box button {
@@ -65,61 +65,50 @@
 }
 
 .sobre-autor {
-    background-color: #f4f4f4;
-    padding: 1em;
-    text-align: center;
-    border-bottom: 2px solid #00aaff;
-    margin: 2em auto;
-    max-width: 80%;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: var(--cinza-claro);
 }
 
 .autor-container {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     max-width: 800px;
     margin: 0 auto;
+    padding: 0 1em;
+    box-sizing: border-box;
 }
 
 .autor-foto {
     border-radius: 50%;
-    width: 150px;
-    height: 150px;
+    width: 100px;
+    height: 100px;
     object-fit: cover;
     margin-bottom: 1em;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-.autor-info h2 {
-    font-size: 2em;
-    margin-bottom: 0.5em;
-    color: #333;
-    font-family: 'Montserrat', sans-serif;
-}
-
 .autor-info p {
-    font-size: 1.1em;
-    line-height: 1.6;
-    color: #666;
-    margin: 0 0 1em;
-    font-family: 'Roboto', sans-serif;
+    font-size: 1em;
+    color: var(--cinza-escuro);
 }
 
 @media (max-width: 768px) {
     .sobre-autor {
         padding: 1.5em;
     }
+
     .autor-foto {
-        width: 120px;
-        height: 120px;
+        width: 80px;
+        height: 80px;
     }
+
     .autor-info h2 {
         font-size: 1.5em;
     }
+
     .autor-info p {
-        font-size: 1em;
+        font-size: 0.9em;
     }
 }
 
@@ -127,67 +116,52 @@
     .sobre-autor {
         padding: 1em;
     }
+
     .autor-foto {
-        width: 100px;
-        height: 100px;
+        width: 70px;
+        height: 70px;
     }
+
     .autor-info h2 {
-        font-size: 1.2em;
-    }
-    .autor-info p {
-        font-size: 0.9em;
-    }
-}
-
-
-@media (max-width: 768px) {
-    .promo-box {
-        max-width: 90%;
-    }
-
-    .promo-box h2 {
         font-size: 1.3em;
     }
 
-    .promo-box button {
-        font-size: 0.9em;
-        padding: 0.5em 1em;
-    }
-}
-
-@media (max-width: 480px) {
-    .promo-box {
-        max-width: 95%;
-    }
-
-    .promo-box h2 {
-        font-size: 1.2em;
-    }
-
-    .promo-box button {
+    .autor-info p {
         font-size: 0.8em;
-        padding: 0.4em 0.8em;
     }
 }
 
-/* Reseta a exibição de elementos em dispositivos móveis */
-@media (max-width: 768px) {
-    .modal-content {
-        width: 90%;
-        padding: 1em;
-    }
+/* Seção de Garantia */
+.garantia {
+    background-image: url('bg.svg'); /* Adiciona a textura de fundo */
+    background-color: #000; /* Fundo preto */
+    background-repeat: repeat;
+    background-size: cover;
+    color: #fff;
+    padding: 2em;
+    text-align: center;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    margin: 2em auto;
+    box-sizing: border-box;
 }
 
-.modal-content h2 {
-    font-size: 1.5em;
-    margin: 0 0 0.5em;
-    color: #333;
-    text-transform: uppercase;
+.garantia h2 {
+    font-size: 2em;
+    color: #f7c242; /* Amarelo para destaque */
+    margin-bottom: 1em;
+    font-family: var(--font-primary);
 }
 
-.promo-box h2 {
-    font-size: 1.5em;
-    margin: 0 0 0.5em;
-    color: #333;
-    text-transform: uppercase;
+.garantia p {
+    font-size: 1.2em;
+    color: #fff; /* Cor do texto */
+    margin: 0;
+    line-height: 1.5;
+    font-family: var(--font-primary);
+}
+
+
+.exclusivo {
+    color: #F7C242; /* Amarelo */
+    font-weight: bold;
 }

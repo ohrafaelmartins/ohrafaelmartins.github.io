@@ -1,0 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300;400;700&display=swap');
+
+:root {
+    --padding-default: 10px;
+    --color-primary: #00aaff;
+    --color-text: #333;
+    --color-text-secondary: #666;
+    --background-color: #f9f9f9;
+    --header-background: rgba(255, 255, 255, 0.9);
+    --modal-background: rgba(0, 0, 0, 0.5);
+    --font-primary: 'Barlow Condensed', sans-serif;
+}

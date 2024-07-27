@@ -1,109 +1,203 @@
-header h1 {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 1.8em;
-    margin: 0 0 0.5em;
-    line-height: 1.3;
+/* Header */
+header {
+    background: #333 url('bg.svg') repeat;
+    color: #fff;
+    padding: 1em;
     text-align: center;
 }
 
-.ebook-mockup {
+header h1 {
+    font-size: 2.5em;
+    margin: 0;
+    font-family: var(--font-primary);
+}
+
+header nav {
+    margin-top: 1em;
+}
+
+header nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 1em;
+    font-size: 1.2em;
+    font-family: var(--font-primary);
+}
+
+header nav a:hover {
+    text-decoration: underline;
+}
+
+/* Seção Promessa */
+.promessa {
+    background-color: #000;
+    background-image: url('bg.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #fff;
+    padding: 2em;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    box-sizing: border-box;
+}
+
+.oferta {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.oferta-text,
+.oferta-red {
     display: block;
-    margin: 1em auto;
-    max-width: 69%;
-    height: auto;
+}
+
+.oferta-text {
+    font-size: 1.2em;
+    color: #fff;
+    font-family: var(--font-primary);
+    margin-bottom: 0.2em;
+}
+
+.oferta-red {
+    font-size: 2.5em;
+    color: #e74c3c;
+    font-family: var(--font-primary);
+    font-weight: bold;
+    margin-bottom: 1em;
+}
+
+.oferta button {
+    background-color: #F7C242;
+    color: #000;
+    border: none;
+    padding: 0.75em 1.5em;
+    font-size: 1.1em;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+    font-family: var(--font-primary);
+}
+
+.oferta button:hover {
+    background-color: #000;
+    color: #F7C242;
+}
+
+/* Estilos Globais */
+.promessa-text {
+    font-size: 1.5em;
+    line-height: 1.5;
+}
+
+.intro-text {
+    font-size: 2.2em;
+    color: var(--color-text-primary);
+    margin-bottom: 2em;
 }
 
 .promessas {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 2em auto;
+    margin-bottom: 2em;
 }
 
 .promessa-item {
-    /* display: flex;
-    align-items: flex-start; */
-    margin-bottom: 1.5em;
-    max-width: 80%;
-    padding: 1em;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    background-color: #fff;
+    display: flex;
+    align-items: center;
+    font-size: 1.2em;
+    margin: 0.5em 0;
 }
 
-.promessa-item .number {
-    background-color: #00aaff;
+.promessa-item i {
+    color: var(--color-primary);
+    font-size: 1.5em;
+    margin-right: 0.5em;
+}
+
+/* Estilo do Botão */
+.btn-cta {
+    display: inline-block;
+    padding: 1em 2em;
+    font-size: 1.2em;
     color: #fff;
-    border-radius: 50%;
-    width: 100px;
-    height: 100px;
+    background-color: var(--color-primary);
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
     text-align: center;
-    margin-right: 1em;
-    font-size: 1.2em;
+    margin: 1.5em 0;
+    transition: background-color 0.3s, transform 0.3s;
+    max-width: 600px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-.promessa-text {
-    font-family: 'Roboto', sans-serif;
-    font-size: 1.2em;
-    margin: 0;
-    line-height: 1.5;
+.btn-cta:hover {
+    background-color: white;
+    color: #000;
 }
 
+.btn-cta:active {
+    background-color: var(--color-primary-dark);
+}
+
+/* Media Queries */
 @media (max-width: 768px) {
     header h1 {
-        font-size: 1.5em;
+        font-size: 2em;
     }
-    
-    .promessas {
-        margin: 1em auto;
-        max-width: 90%;
-    }
-    .promessa-item {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-    .promessa-item .number {
-        margin-bottom: 0.5em;
-    }
-    .promessa-text {
+
+    header nav a {
         font-size: 1em;
+    }
+
+    .promessa-text {
+        font-size: 1.2em;
+        line-height: 1.4;
+    }
+
+    .oferta-text {
+        font-size: 1em;
+    }
+
+    .oferta-red {
+        font-size: 2em;
+    }
+
+    .oferta button {
+        font-size: 1em;
+        padding: 0.75em 1em;
     }
 }
 
 @media (max-width: 480px) {
     header h1 {
-        font-size: 1.2em;
+        font-size: 1.5em;
     }
-    
+
+    header nav a {
+        font-size: 0.9em;
+        display: block;
+        margin: 0.5em 0;
+    }
+
     .promessa-text {
+        font-size: 1.1em;
+        line-height: 1.4;
+        margin-top: 1.4em;
+    }
+
+    .oferta-text {
         font-size: 0.9em;
     }
-    .promessa-item .number {
-        width: 30px;
-        height: 30px;
-        line-height: 30px;
-        font-size: 1em;
+
+    .oferta-red {
+        font-size: 1.8em;
     }
-}
 
-header h1 {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 1.8em;
-    margin: 0 0 0.5em;
-    line-height: 1.3;
-    text-align: center;
-    text-transform: uppercase;
-}
-
-@media (max-width: 768px) {
-    header h1 {
-        font-size: 1.5em;
-    }
-}
-
-@media (max-width: 480px) {
-    header h1 {
-        font-size: 1.2em;
+    .oferta button {
+        font-size: 0.9em;
+        padding: 0.5em 1em;
     }
 }

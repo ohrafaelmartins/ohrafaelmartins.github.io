@@ -1,0 +1,17 @@
+:root {
+    --font-primary: 'Barlow Condensed', sans-serif;
+    --padding-default: 10px;
+    --color-primary: #00aaff;
+    --color-text: #333;
+    --color-text-secondary: #666;
+    --background-color: #f9f9f9;
+    --header-background: rgba(255, 255, 255, 0.9);
+    --modal-background: rgba(0, 0, 0, 0.5);
+    --cinza-claro: #f4f4f4;
+    --cinza-escuro: #666;
+    --azul-escuro: #0033a0;
+}
+
+body {
+    font-family: var(--font-primary);
+}

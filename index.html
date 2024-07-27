@@ -10,12 +10,18 @@
         content="guia de viagem, Norte da Argentina, ebook, roteiros, câmbio, Western Union, viajar de carro, economizar na viagem, documentos para viajar na Argentina">
     <meta name="author" content="Seu Nome">
     <title>Guia de Viagem Norte da Argentina - Economize até 50% com Nosso Guia</title>
-    <link rel="stylesheet" href="topo.css">
-    <link rel="stylesheet" href="header.css">
-    <link rel="stylesheet" href="cronometro.css">
+    <link rel="stylesheet" href="variaveis.css">
+    <link rel="stylesheet" href="base.css">
     <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="header.css">
     <link rel="stylesheet" href="conteudo.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Montserrat:wght@400;700&display=swap">
+    <link rel="stylesheet" href="cronometro.css">
+    <link rel="stylesheet" href="modal.css">
+    <link rel="stylesheet" href="topo.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Montserrat:wght@400;700&display=swap">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
 </head>
 
@@ -23,30 +29,36 @@
     <div id="cronometro">
         <p>Fique de olho, a oferta termina em <span class="timer" id="countdown"></span></p>
     </div>
-
     <header>
         <div class="header-content">
             <h1 class="highlightt">
-                Conheça os destinos imperdíveis do norte da Argentina e economize até 50% em sua viagem de carro com
-                total confiança.
+                EXCLUSIVO: <span class="exclusivo">ECONOMIZE ATÉ 50% EM SUA VIAGEM DE CARRO PARA O NORTE DA
+                    ARGENTINA</span>
             </h1>
+
             <div class="promessas">
                 <div class="promessa-item">
-                    <span class="number">✔</span>
+                    <i class="fas fa-check-circle"></i>
                     <div class="promessa-text">Explore destinos imperdíveis e descubra segredos para uma viagem
                         inesquecível.</div>
                 </div>
                 <div class="promessa-item">
-                    <span class="number">✔</span>
+                    <i class="fas fa-check-circle"></i>
                     <div class="promessa-text">Aproveite dicas valiosas para maximizar sua experiência e economizar com
                         eficiência.</div>
                 </div>
                 <div class="promessa-item">
-                    <span class="number">✔</span>
+                    <i class="fas fa-check-circle"></i>
                     <div class="promessa-text">Saiba informações essenciais sobre câmbio, pedágios, segurança, estradas
                         e muito mais.</div>
                 </div>
+
+                <a href="#adquirir-ebook" class="btn-cta">Adquira nosso eBook guia de viagem e comece a planejar sua
+                    jornada agora!</a>
+
+
             </div>
+
             <div class="mockup">
                 <img src="mockup-ebook.png" alt="Mockup do Ebook">
             </div>
@@ -54,93 +66,119 @@
     </header>
 
     <main>
+
+        <section class="conteudo-ebook">
+            <h2>Sobre o Conteúdo do Ebook</h2>
+
+            <div class="highlight">
+                <i class="fas fa-check-circle"></i> <strong>Planejamento Detalhado</strong>
+            </div>
+            <p>Saiba tudo sobre <strong>documentos necessários, dicas práticas</strong>, e o melhor <strong>roteiro e
+                    itinerário</strong> para sua viagem. Além disso, oferecemos conselhos sobre <strong>internet,
+                    segurança, conforto</strong> e muito mais para garantir que você esteja completamente preparado.</p>
+
+            <div class="highlight">
+                <i class="fas fa-check-circle"></i> <strong>Gestão de Dinheiro e Finanças</strong>
+            </div>
+            <p>Aprenda sobre <strong>câmbio de moedas, uso de cartões</strong> e <strong>saques</strong>. Nosso guia
+                também inclui uma <strong>estimativa de custos</strong> e dicas valiosas sobre como economizar durante a
+                sua viagem.</p>
+
+            <div class="highlight">
+                <i class="fas fa-check-circle"></i> <strong>Informações Sobre Veículo e Rodovias</strong>
+            </div>
+            <p>Obtenha informações essenciais sobre <strong>documentos obrigatórios do veículo</strong>,
+                <strong>estradas, rodovias e sinalização</strong>. Saiba como lidar com <strong>pedágios</strong>,
+                conduzir em grandes altitudes e garantir que seu veículo esteja preparado para a jornada.
+            </p>
+
+            <div class="highlight">
+                <i class="fas fa-check-circle"></i> <strong>Destinos Imperdíveis</strong>
+            </div>
+            <p>Explore as principais <strong>cidades e pontos turísticos</strong> do Norte da Argentina. Informações
+                detalhadas sobre <strong>altitude, localização, infraestrutura</strong> e <strong>preços</strong>
+                ajudarão você a planejar uma viagem adaptada às suas preferências.</p>
+
+        </section>
+
+
+        <!-- Seção Promessa -->
         <section class="promessa">
-            <div class="promo-box" id="promo-box">
-                <h2>APENAS R$ 23,97</h2>
+            <div class="oferta">
+                <span class="oferta-text">APENAS</span>
+                <span class="oferta-red">R$ 27,00</span>
                 <button>Compre Agora</button>
             </div>
         </section>
 
-        <section class="conteudo-ebook">
-            <h2>Sobre o Conteúdo do Ebook</h2>
-            <div class="highlight highlight-norte">Norte Argentino</div>
-            <p>Geografia, Clima, fauna, flora, vinhos, pratos típicos e arquitetura.</p>
-
-            <div class="highlight highlight-planejamento">Planejamento</div>
-            <p>Documentos, dicas, quando ir, roteiro, itinerário, internet, segurança, conforto, itens essenciais,
-                aplicativos úteis, como chegar, mapas, pontos de apoio, postos de combustível, etc.</p>
-
-            <div class="highlight highlight-dinheiro">Dinheiro e Finanças</div>
-            <p>Câmbios, Western Union, Cartões, Saques, Estimativa de custos, como economizar.</p>
-
-            <div class="highlight highlight-veiculo">Veículo e Rodovias</div>
-            <p>Documentos obrigatórios do Veículo, estradas e rodovias, sinalização, pedágios, condução em grandes
-                altitudes, combustível e itens obrigatórios do veículo, etc.</p>
-
-            <div class="highlight highlight-destinos">Destinos</div>
-            <p>Cidades, pontos turísticos, altitude, localização, infraestrutura, preços.</p>
-        </section>
-
         <section class="sobre-autor">
             <div class="autor-container">
-                <img src="foto-autor.jpg" alt="Foto do Autor" class="autor-foto">
+                <img src="mockup-ebook.png" alt="Foto do Autor" class="autor-foto">
                 <div class="autor-info">
                     <h2>Sobre o Autor</h2>
-                    <p>Olá, eu sou [Nome do Autor], um apaixonado por viagens e expert em roteiros pelo norte da Argentina. Com anos de experiência em explorar e descobrir os melhores destinos, estou aqui para compartilhar meu conhecimento e ajudar você a aproveitar ao máximo sua viagem. Neste guia, você encontrará dicas valiosas, roteiros detalhados e tudo o que precisa saber para uma jornada inesquecível.</p>
+                    <p>Olá, eu sou [Nome do Autor], um apaixonado por viagens e expert em roteiros pelo norte da
+                        Argentina. Com anos de experiência em explorar e descobrir os melhores destinos, estou aqui para
+                        compartilhar meu conhecimento e ajudar você a aproveitar ao máximo sua viagem. Neste guia, você
+                        encontrará dicas valiosas, roteiros detalhados e tudo o que precisa saber para uma jornada
+                        inesquecível.</p>
                     <p>Espero que você aproveite este guia e tenha uma viagem incrível!</p>
                     <p><strong>[Nome do Autor]</strong></p>
                 </div>
             </div>
         </section>
 
-        
-    </main>
 
-    <div id="modal" class="modal">
+        <!-- Seção de Garantia -->
+        <section class="garantia">
+            <div class="garantia-content">
+                <h2>GARANTIA DE 7 DIAS COM RISCO ZERO!</h2>
+                <p>Ainda não tem certeza? Não se preocupe!</p>
+                <p>Se o conteúdo descrito acima não for o mesmo que você receber, você tem 7 dias de garantia e
+                    devolverei
+                    seu dinheiro sem burocracia!</p>
+            </div>
+        </section>
+
+
+    </main>
+    <div id="modal" class="modal promo-box">
         <div class="modal-content">
             <span class="close">&times;</span>
-            <div class="promo-box">
-                <h2>APENAS R$ 23,97</h2>
-                <button>Compre Agora</button>
-            </div>
+            <p class="price-strikethrough">DE R$47,00 POR APENAS</p>
+            <p class="price-large">R$27,00</p>
+            <button class="cta-button">Garanta agora o seu guia</button>
         </div>
     </div>
+
+
 
     <script>
         function startCountdown(duration, display) {
             let timer = duration, minutes, seconds;
             const promoBox = document.getElementById('promo-box');
-            promoBox.style.display = 'none';
-
+            modal.style.display = 'none';
             const interval = setInterval(function () {
                 minutes = parseInt(timer / 60, 10);
                 seconds = parseInt(timer % 60, 10);
-
                 minutes = minutes < 10 ? "0" + minutes : minutes;
                 seconds = seconds < 10 ? "0" + seconds : seconds;
-
                 display.textContent = minutes + ":" + seconds;
-
                 if (--timer < 0) {
                     clearInterval(interval);
-                    promoBox.style.display = 'block';
+                    modal.style.display = 'block';
                     document.getElementById('modal').style.display = 'flex';
                 }
             }, 1000);
         }
-
         window.onload = function () {
-            let nineSeconds = 600, display = document.querySelector('#countdown');
+            let nineSeconds = 599, display = document.querySelector('#countdown');
             startCountdown(nineSeconds, display);
-
             // Modal functionality
             const modal = document.getElementById('modal');
             const closeModal = document.querySelector('.modal .close');
-
             closeModal.onclick = function () {
                 modal.style.display = 'none';
             }
-
             window.onclick = function (event) {
                 if (event.target == modal) {
                     modal.style.display = 'none';
