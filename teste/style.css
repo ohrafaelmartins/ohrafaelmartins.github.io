@@ -1,0 +1,169 @@
+/* Estilos gerais */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Barlow Condensed', sans-serif;
+    line-height: 1.6;
+    background-color: #f0f0f0; /* Fundo cinza claro */
+    color: #333; /* Texto cinza escuro */
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.banner {
+    width: 100%;
+    height: 70vh; /* 70% da altura da tela */
+    background-image: url('bg.jpg'); /* Imagem de fundo da Serranía de Hornocal */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.banner h1 {
+    font-size: 3.5em; /* Letra grande */
+    color: #fff; /* Texto branco */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Sombra no texto para destacar */
+    margin: 0;
+    padding: 20px;
+}
+
+.promessa,
+.conteudo,
+.checkout,
+.autor {
+    max-width: 800px; /* Largura máxima para todas as seções */
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff; /* Fundo branco */
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+.promessa h2,
+.conteudo h2,
+.checkout h2,
+.autor h2 {
+    font-size: 2em; /* Tamanho do título */
+    color: #72543b; /* Marrom Terra */
+    margin-bottom: 20px;
+}
+
+.promessa p,
+.conteudo p,
+.checkout p,
+.autor p {
+    font-size: 1.2em; /* Tamanho do texto */
+    line-height: 1.6;
+}
+
+.topics {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.topics li {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.topics li::before {
+    content: '\2714'; /* Unicode para checkmark */
+    font-size: 1.2em;
+    margin-right: 10px;
+    color: #72543b; /* Marrom Terra */
+}
+
+.checkout {
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-group {
+    margin-bottom: 15px;
+    text-align: left;
+    width: 100%;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #72543b; /* Marrom Terra */
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"] {
+    width: calc(100% - 20px);
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus {
+    outline: none;
+    border-color: #72543b; /* Marrom Terra */
+}
+
+.btn-comprar {
+    display: inline-block;
+    background-color: #72543b; /* Marrom Terra */
+    color: #fff; /* Texto branco */
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    margin-top: 15px;
+}
+
+.btn-comprar:hover {
+    background-color: #5a432f; /* Marrom mais escuro */
+}
+
+.autor-info {
+    display: flex;
+    align-items: center;
+}
+
+.autor-info img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%; /* Transforma a imagem em um círculo */
+    margin-right: 20px;
+}
+
+.autor-texto {
+    flex: 1;
+}
+
+.autor-texto h2 {
+    font-size: 2em;
+    color: #72543b; /* Marrom Terra */
+    margin-bottom: 10px;
+}
+
+.autor-texto p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    color: #333; /* Texto cinza escuro */
+}
