@@ -1,4 +1,12 @@
-/* CSS Geral */
+:root {
+    --azul-celeste-claro: #74a9dd;
+    --azul-celeste-escuro: #5b92d4;
+    --branco: #ffffff;
+    --amarelo-dourado-vibrante: #ffd700;
+    --amarelo-dourado-suave: #e6c800;
+    --amarelo-dourado-claro: #f9e58b;
+}
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -8,53 +16,52 @@
 body {
     font-family: 'Barlow Condensed', sans-serif;
     line-height: 1.6;
-    background-color: #f0f0f0; /* Fundo cinza claro */
-    color: #333; /* Texto cinza escuro */
+    background-color: var(--branco);
+    color: #333;
     padding: 20px;
 }
 
 header {
     text-align: center;
-    margin-bottom: 20px;
 }
 
 .banner {
     width: 100%;
-    height: 70vh; /* 70% da altura da tela */
-    background-image: url('bg.jpg'); /* Imagem de fundo da Serranía de Hornocal */
+    height: 70vh;
+    background-image: url('bg.jpg');
     background-size: cover;
     background-position: center;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
-    color: #fff; /* Texto branco */
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Sombra no texto para destacar */
+    color: var(--branco);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .banner h1 {
-    font-size: 3.5em; /* Letra grande */
+    font-size: 3.5em;
     margin: 0;
     padding: 20px;
+    text-transform: uppercase;
 }
 
 main {
-    max-width: 800px; /* Largura máxima para o conteúdo */
+    max-width: 800px;
     margin: 20px auto;
     padding: 20px;
-    background-color: #fff; /* Fundo branco */
+    background-color: var(--branco);
     border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 section {
-    margin-bottom: 20px;
+    margin-bottom: 2px;
 }
 
 h2 {
-    font-size: 2em; /* Tamanho do título */
-    color: #72543b; /* Marrom Terra */
-    margin-bottom: 10px;
+    /* font-size: 1.6em; */
+    color: var(--azul-celeste-escuro);
 }
 
 .topics {
@@ -64,51 +71,48 @@ h2 {
 
 .topics li {
     font-size: 1.2em;
-    margin-bottom: 10px;
     display: flex;
     align-items: center;
 }
 
 .topics li::before {
-    content: '\2714'; /* Unicode para checkmark */
+    content: '\2714';
     font-size: 1.2em;
     margin-right: 10px;
-    color: #72543b; /* Marrom Terra */
+    color: var(--azul-celeste-escuro);
 }
 
 footer {
     text-align: center;
     margin-top: 20px;
     padding: 10px 0;
-    background-color: #f0f0f0; /* Fundo cinza claro */
+    background-color: var(--branco);
 }
 
 .promessa,
 .conteudo,
 .checkout,
 .autor {
-    max-width: 800px; /* Largura máxima para todas as seções */
+    max-width: 800px;
     margin: 20px auto;
     padding: 20px;
-    background-color: #fff; /* Fundo branco */
+    background-color: var(--branco);
     border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra suave */
 }
 
 .promessa h2,
 .conteudo h2,
 .checkout h2,
 .autor h2 {
-    font-size: 2em; /* Tamanho do título */
-    color: #72543b; /* Marrom Terra */
-    margin-bottom: 20px;
+    /* font-size: 1, 6em; */
+    color: var(--azul-celeste-claro);
 }
 
 .promessa p,
 .conteudo p,
 .checkout p,
 .autor p {
-    font-size: 1.2em; /* Tamanho do texto */
+    font-size: 1.2em;
     line-height: 1.6;
 }
 
@@ -123,15 +127,13 @@ form {
 }
 
 .form-group {
-    margin-bottom: 15px;
     text-align: left;
     width: 100%;
 }
 
 label {
     display: block;
-    margin-bottom: 5px;
-    color: #72543b; /* Marrom Terra */
+    color: var(--azul-celeste-escuro);
 }
 
 input[type="text"],
@@ -139,7 +141,7 @@ input[type="email"],
 input[type="tel"] {
     width: calc(100% - 20px);
     padding: 10px;
-    border: 1px solid #ccc;
+    border: 1px solid var(--azul-celeste-escuro);
     border-radius: 5px;
     font-size: 1em;
 }
@@ -148,13 +150,13 @@ input[type="text"]:focus,
 input[type="email"]:focus,
 input[type="tel"]:focus {
     outline: none;
-    border-color: #72543b; /* Marrom Terra */
+    border-color: var(--azul-celeste-claro);
 }
 
 .btn-comprar {
     display: inline-block;
-    background-color: #72543b; /* Marrom Terra */
-    color: #fff; /* Texto branco */
+    background-color: var(--amarelo-dourado-vibrante);
+    color: var(--branco);
     text-decoration: none;
     padding: 10px 20px;
     border-radius: 5px;
@@ -163,68 +165,67 @@ input[type="tel"]:focus {
 }
 
 .btn-comprar:hover {
-    background-color: #5a432f; /* Marrom mais escuro */
+    background-color: var(--amarelo-dourado-suave);
 }
 
 .autor-info {
     display: flex;
-    flex-direction: column; /* Exibir em coluna */
-    align-items: center; /* Centraliza itens */
-    text-align: center; /* Centraliza texto */
-    background-color: #f9f9f9; /* Fundo cinza claro */
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
     padding: 20px;
     border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra suave */
 }
 
 .autor-info img {
-    width: 150px; /* Tamanho da imagem do autor */
-    height: 150px; /* Tamanho da imagem do autor */
-    border-radius: 50%; /* Borda circular para a imagem */
-    margin-bottom: 20px; /* Espaçamento abaixo da imagem */
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 10px;
 }
 
 .autor-text {
-    flex: 1; /* Ocupa todo o espaço disponível */
-    text-align: left; /* Alinha texto à esquerda */
+    flex: 1;
+    text-align: left;
 }
 
 .autor-text h2 {
-    font-size: 2em;
-    color: #72543b; /* Marrom Terra */
+    /* font-size: 2em; */
+    color: var(--azul-celeste-escuro);
     margin-bottom: 10px;
 }
 
 .autor-text p {
     font-size: 1.2em;
-    line-height: 1.6;
+    line-height: 1.2;
+    text-align: justify;
+    padding: 0.5em;
 }
 
-/* Mídia Query para dispositivos móveis */
 @media (max-width: 768px) {
     .banner h1 {
-        font-size: 2.5em; /* Reduzindo o tamanho do título no banner */
+        font-size: 2.5em;
     }
 
     .topics li {
-        font-size: 1em; /* Reduzindo o tamanho do texto nos tópicos */
+        font-size: 1em;
     }
 
     .autor-info img {
-        width: 80px; /* Reduzindo o tamanho da imagem do autor */
-        height: 80px; /* Reduzindo o tamanho da imagem do autor */
-        margin-bottom: 10px; /* Ajustando espaço abaixo da imagem */
+        width: 80px;
+        height: 80px;
+        margin-bottom: 10px;
     }
 
     .autor-info {
-        padding: 10px; /* Reduzindo o padding da seção de informações do autor */
+        padding: 10px;
     }
 
     .autor-text h2 {
-        font-size: 1.5em; /* Reduzindo o tamanho do título sobre o autor */
+        /* font-size: 1.5em; */
     }
 
     .autor-text p {
-        font-size: 1em; /* Reduzindo o tamanho do texto sobre o autor */
+        font-size: 1em;
     }
 }
