@@ -9,24 +9,31 @@
     <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700&display=swap" rel="stylesheet">
     <!--- Required script --->
     <script src="https://checkout.hotmart.com/lib/hotmart-checkout-elements.js"></script>
-
 </head>
 
 <body>
     <header>
         <div class="banner">
-            <h1>GUIA DE VIAGEM NORTE ARGENTINA</h1>
+            <!-- <h1>GUIA DE VIAGEM NORTE ARGENTINA</h1> -->
+            <h1>
+                Norte da Argentina: O Guia Definitivo para Sua Viagem de Carro ou Motorhome!
+            </h1>
         </div>
-        <div class="promessa">
-            <h2>Economize até 50% em sua viagem de carro ao norte da Argentina</h2>
-            <p>
-                Um guia completo para quem sonha em cair na estrada.
-            </p>
-
-        </div>
-
     </header>
     <main>
+        <section class="promessa">
+            <p>
+                Descubra o Norte da Argentina como nunca antes com este <strong>Guia Completo para Viagens de Carro e
+                    Motorhome</strong>. Este <strong>ebook</strong> é o seu passaporte para uma jornada experiência
+                inesquecível.
+            </p>
+        </section>
+        <!-- fim sessao -->
+        <section class="ebook-info">
+            <i class="fas fa-book"></i>
+            <p>Mais de <strong>70 páginas de conteúdo.</strong>!</p>
+        </section>
+        <!-- fim sessao -->
         <section class="vantagens">
             <h2>Vantagens do Guia</h2>
             <ul class="topics">
@@ -36,6 +43,7 @@
                 <li> Saiba detalhes para uma viagem tranquila. </li>
             </ul>
         </section>
+        <!-- fim sessao -->
         <section class="turistas">
             <h2>Dicas para Turistas</h2>
             <ul class="topics">
@@ -49,6 +57,7 @@
                 <li>Como chegar</li>
             </ul>
         </section>
+        <!-- fim sessao -->
         <section class="motoristas">
             <h2>Dicas para Motoristas</h2>
             <ul class="topics">
@@ -63,40 +72,14 @@
                 <li>Mapas</li>
             </ul>
         </section>
+        <!-- fim sessao -->
         <section class="checkout">
             <h2>Adquira seu Guia Agora!</h2>
-            <!-- <form action="#" method="post">
-                <div class="form-group">
-                    <label for="nome">Nome:</label>
-                    <input type="text" id="nome" name="nome" required>
-                </div>
-                <div class="form-group">
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" required>
-                </div>
-                <div class="form-group">
-                    <label for="telefone">Telefone:</label>
-                    <input type="tel" id="telefone" name="telefone">
-                </div>
-                <div class="form-group">
-                    <label for="endereco">Endereço:</label>
-                    <input type="text" id="endereco" name="endereco">
-                </div>
-                <div class="form-group">
-                    <label for="cidade">Cidade:</label>
-                    <input type="text" id="cidade" name="cidade">
-                </div>
-                <div class="form-group">
-                    <label for="cep">CEP:</label>
-                    <input type="text" id="cep" name="cep">
-                </div>
-                <button type="submit" class="btn-comprar">Comprar Agora</button>
-            </form> -->
-
-
-            <!--- The div that the checkout should be loaded --->
             <div id="inline_checkout"></div>
+
         </section>
+        <!-- fim sessao -->
+         
         <section class="autor">
             <h2>Sobre o Autor</h2>
             <div class="autor-info">
@@ -116,31 +99,18 @@
                 </div>
             </div>
         </section>
+    
+        <!-- fim sessao -->
     </main>
     <footer>
         <p>&copy; 2024 Guia de Viagem Norte Argentina. Todos os direitos reservados.</p>
     </footer>
 </body>
-
 <script>
     const elements = checkoutElements.init('inlineCheckout', {
         offer: 'rw2pabmk'
     })
     elements.mount('#inline_checkout')
-</script>
-
-<script type="text/javascript">
-    function importHotmart() {
-        var imported = document.createElement('script');
-        imported.src = 'https://static.hotmart.com/checkout/widget.min.js';
-        document.head.appendChild(imported);
-        var link = document.createElement('link');
-        link.rel = 'stylesheet';
-        link.type = 'text/css';
-        link.href = 'https://static.hotmart.com/css/hotmart-fb.min.css';
-        document.head.appendChild(link);
-    }
-    importHotmart(); 
 </script>
 
 </html>
