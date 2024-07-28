@@ -1,315 +1,116 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description"
-        content="Guia de viagem para o Norte da Argentina. Economize até 50% com nosso guia completo, incluindo roteiros, câmbio, e dicas para viajar de carro.">
-    <meta name="keywords"
-        content="guia de viagem, Norte da Argentina, ebook, roteiros, câmbio, Western Union, viajar de carro, economizar na viagem, documentos para viajar na Argentina">
-    <meta name="author" content="Seu Nome">
-    <title>Guia de Viagem Norte da Argentina - Economize até 50% com Nosso Guia</title>
-    <link rel="stylesheet" href="variaveis.css">
-    <link rel="stylesheet" href="base.css">
-    <link rel="stylesheet" href="estilo.css">
-    <link rel="stylesheet" href="header.css">
-    <link rel="stylesheet" href="conteudo.css">
-    <link rel="stylesheet" href="cronometro.css">
-    <link rel="stylesheet" href="modal.css">
-    <link rel="stylesheet" href="topo.css">
-    <link rel="stylesheet" href="depoimentos.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <!-- Script do Facebook Pixel -->
-    <script>
-        !function (f, b, e, v, n, t, s) {
-            if (f.fbq) return; n = f.fbq = function () {
-                n.callMethod ?
-                    n.callMethod.apply(n, arguments) : n.queue.push(arguments)
-            };
-            if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
-            n.queue = []; t = b.createElement(e); t.async = !0;
-            t.src = v; s = b.getElementsByTagName(e)[0];
-            s.parentNode.insertBefore(t, s)
-        }(window, document, 'script',
-            'https://connect.facebook.net/en_US/fbevents.js');
-        fbq('init', 'SEU_ID_DO_PIXEL'); // Substitua pelo seu ID do Pixel
-        fbq('track', 'PageView');
-    </script>
-    <noscript><img height="1" width="1" style="display:none"
-            src="https://www.facebook.com/tr?id=SEU_ID_DO_PIXEL&ev=PageView&noscript=1" /></noscript>
-    <!-- Fim do Script do Facebook Pixel -->
+    <title>Guia de Viagem Norte Argentina</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700&display=swap" rel="stylesheet">
+    <!--- Required script --->
+    <script src="https://checkout.hotmart.com/lib/hotmart-checkout-elements.js"></script>
 </head>
 
 <body>
-    <div id="cronometro">
-        <p>Fique de olho, a oferta termina em <span class="timer" id="countdown"></span></p>
-    </div>
     <header>
-        <div class="header-content">
-            <div class="maximo">
-                <h1 class="highlightt">
-                    EXCLUSIVO: <span class="exclusivo">ECONOMIZE ATÉ 50% EM SUA VIAGEM DE CARRO PARA O </span> NORTE DA
-                    ARGENTINA
-                </h1>
-                <div class="promessas">
-                    <div class="promessa-item">
-                        <i class="fas fa-check-circle"></i>
-                        <div class="promessa-text">Explore destinos imperdíveis e descubra segredos para uma viagem
-                            inesquecível.</div>
-                    </div>
-                    <div class="promessa-item">
-                        <i class="fas fa-check-circle"></i>
-                        <div class="promessa-text">Aproveite dicas valiosas para maximizar sua experiência e economizar
-                            com
-                            eficiência.</div>
-                    </div>
-                    <div class="promessa-item">
-                        <i class="fas fa-check-circle"></i>
-                        <div class="promessa-text">Saiba informações essenciais sobre câmbio, pedágios, segurança,
-                            estradas
-                            e muito mais.</div>
-                    </div>
-                    <div>
-                        <a href="#adquirir-ebook" class="btn-cta" onclick="trackEvent('ClicouAdquirirEbook')">
-                            <span>Comece a planejar sua jornada agora!</span>
-                            Apenas <span class="price-red">R$ 27,00</span>
-                        </a>
-                    </div>
-                </div>
-                <div class="mockup">
-                    <img src="mockup-ebook.png" alt="Mockup do Ebook">
-                </div>
-            </div>
+        <div class="banner">
+            <!-- <h1>GUIA DE VIAGEM NORTE ARGENTINA</h1> -->
+            <h1>
+                Norte da Argentina: O Guia Definitivo para Sua Viagem de Carro ou Motorhome!
+            </h1>
         </div>
     </header>
     <main>
-        <section class="conteudo-ebook">
-            <div class="maximo">
-                <h2>Conheça o conteúdo do guia de viagem:</h2>
-                <div class="grid-container">
-                    <div class="item">
-                        <div class="check-icon">
-                            <h3><i class="fas fa-check-circle"></i> Planejamento Detalhado</h3>
-                        </div>
-                        <p>Saiba tudo sobre documentos necessários, dicas práticas, e o melhor roteiro e itinerário para
-                            sua
-                            viagem. Além disso, oferecemos conselhos sobre internet, segurança, conforto e muito mais
-                            para
-                            garantir que você esteja completamente preparado.</p>
-                    </div>
-                    <div class="item">
-                        <div class="check-icon">
-                            <h3><i class="fas fa-check-circle"></i> Gestão de Dinheiro e Finanças </h3>
-                        </div>
-                        <p>Aprenda sobre câmbio de moedas, uso de cartões e saques. Nosso guia também inclui uma
-                            estimativa
-                            de custos e dicas valiosas sobre como economizar durante a sua viagem.</p>
-                    </div>
-                    <div class="item">
-                        <div class="check-icon">
-                            <h3><i class="fas fa-check-circle"></i> Informações Sobre Veículo e Rodovias </h3>
-                        </div>
-                        <p>Obtenha informações essenciais sobre documentos obrigatórios do veículo, estradas, rodovias e
-                            sinalização. Saiba como lidar com pedágios, conduzir em grandes altitudes e garantir que seu
-                            veículo esteja preparado para a jornada.</p>
-                    </div>
-                    <div class="item">
-                        <div class="check-icon">
-                            <h3><i class="fas fa-check-circle"></i> Destinos Imperdíveis</h3>
-                        </div>
-                        <p>Explore as principais cidades e pontos turísticos do Norte da Argentina. Informações
-                            detalhadas
-                            sobre altitude, localização, infraestrutura e preços ajudarão você a planejar uma viagem
-                            adaptada às suas preferências.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- Seção Promessa -->
         <section class="promessa">
-            <div class="maximo">
-                <div class="oferta">
-                    <p class="acesso-imediato">ACESSO IMEDIATO</p>
-                    <p class="price-strikethrough">DE R$47,00 POR APENAS</p>
-                    <p class="price-large">R$ 27,00</p>
-                    <button onclick="trackEvent('ClicouComprar')">Compre Agora</button>
+            <p>
+                Descubra o Norte da Argentina como nunca antes com este <strong>Guia Completo para Viagens de Carro e
+                    Motorhome</strong>. Este <strong>ebook</strong> é o seu passaporte para uma jornada experiência
+                inesquecível.
+            </p>
+        </section>
+        <!-- fim sessao -->
+        <section class="ebook-info">
+            <i class="fas fa-book"></i>
+            <p>Mais de <strong>70 páginas de conteúdo.</strong>!</p>
+        </section>
+        <!-- fim sessao -->
+        <section class="vantagens">
+            <h2>Vantagens do Guia</h2>
+            <ul class="topics">
+                <li> Planeje sua viagem de forma independente, sem depender de agências. </li>
+                <li> Descubra os destinos essenciais que não podem faltar no seu itinerário. </li>
+                <li> Aproveite ao máximo sua viagem com dicas práticas e úteis. </li>
+                <li> Saiba detalhes para uma viagem tranquila. </li>
+            </ul>
+        </section>
+        <!-- fim sessao -->
+        <section class="turistas">
+            <h2>Dicas para Turistas</h2>
+            <ul class="topics">
+                <li>Documentos necessários</li>
+                <li>Melhor época para visitar</li>
+                <li>Cidades, pontos turísticos, altitudes, localização, infraestrutura e preços </li>
+                <li>Roteiros</li>
+                <li>Dicas de segurança</li>
+                <li>Conforto e itens essenciais</li>
+                <li>Aplicativos úteis</li>
+                <li>Como chegar</li>
+            </ul>
+        </section>
+        <!-- fim sessao -->
+        <section class="motoristas">
+            <h2>Dicas para Motoristas</h2>
+            <ul class="topics">
+                <li>Documentos obrigatórios do veículo</li>
+                <li>Condições das estradas</li>
+                <li>Sinalização</li>
+                <li>Pedágios</li>
+                <li>Direção em altitudes elevadas</li>
+                <li>Combustível</li>
+                <li>Postos de combustível</li>
+                <li>Pontos de apoio</li>
+                <li>Mapas</li>
+            </ul>
+        </section>
+        <!-- fim sessao -->
+        <section class="checkout">
+            <h2>Adquira seu Guia Agora!</h2>
+            <div id="inline_checkout"></div>
+
+        </section>
+        <!-- fim sessao -->
+         
+        <section class="autor">
+            <h2>Sobre o Autor</h2>
+            <div class="autor-info">
+                <img src="autor.jpg" alt="Rafael Martins" class="autor-img">
+                <div class="autor-text">
+                    <p>Olá! Eu sou Rafael Martins.</p>
+                    <p>Sou engenheiro de software, tenho 29 anos e adotei o estilo de vida nômade digital nos últimos
+                        dois anos.</p>
+                    <p>No primeiro ano, percorri países como Portugal, Espanha e Reino Unido, enquanto no segundo ano
+                        explorei o Brasil, do Sul ao Nordeste pela BR 101, em um mini motorhome adaptado dentro de um
+                        carro popular.</p>
+                    <p>Durante minhas viagens, busco uma combinação entre aventura e economia, explorando destinos tanto
+                        no âmbito nacional quanto internacional.</p>
+                    <p>Ao todo, entre turismo e nomadismo, visitei 18 dos 27 estados brasileiros, sempre buscando
+                        autonomia e evitando destinos superlotados e preferindo experiências autênticas e menos
+                        comerciais.</p>
                 </div>
             </div>
         </section>
-        <section class="depoimentos">
-            <div class="maximo">
-                <h2>Depoimentos</h2>
-                <div class="grid-container">
-                    <div class="depoimento">
-                        <div class="avatar">
-                            <img src="avatar1.jpg" alt="Avatar 1">
-                        </div>
-                        <div class="texto">
-                            <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nec odio ipsum.
-                                Suspendisse
-                                cursus
-                                malesuada facilisis."</p>
-                            <span class="autor">- João Silva</span>
-                        </div>
-                    </div>
-                    <div class="depoimento">
-                        <div class="avatar">
-                            <img src="avatar2.jpg" alt="Avatar 2">
-                        </div>
-                        <div class="texto">
-                            <p>"Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis
-                                egestas."</p>
-                            <span class="autor">- Maria Souza</span>
-                        </div>
-                    </div>
-                    <div class="depoimento">
-                        <div class="avatar">
-                            <img src="avatar3.jpg" alt="Avatar 3">
-                        </div>
-                        <div class="texto">
-                            <p>"Fusce molestie laoreet leo, nec volutpat nisi ultricies at. Proin consequat ex eget
-                                mauris
-                                dignissim."</p>
-                            <span class="autor">- José Oliveira</span>
-                        </div>
-                    </div>
-                    <div class="depoimento">
-                        <div class="avatar">
-                            <img src="avatar4.jpg" alt="Avatar 4">
-                        </div>
-                        <div class="texto">
-                            <p>"Aliquam erat volutpat. Nullam vestibulum hendrerit mi a mattis. Proin suscipit, velit ut
-                                vestibulum
-                                fringilla, quam velit ultricies arcu."</p>
-                            <span class="autor">- Ana Santos</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        
-        
-
-        <section class="author-section">
-            <div class="maximo">
-                <img src="avatar.png" alt="Foto de Rafael" class="author-photo">
-
-                <h2>Conheça Rafael</h2>
-                <p>Sou <strong>engenheiro de software</strong>, tenho 29 anos e adotei o estilo de vida <strong>nômade
-                        digital</strong> nos últimos dois
-                    anos.</p>
-
-                <p>No primeiro ano, percorri países como Portugal, Espanha e Reino Unido, enquanto no segundo ano
-                    explorei o Brasil, do Sul ao Nordeste pela BR 101, em um mini motorhome adaptado dentro de um carro
-                    popular.</p>
-
-                <p>Durante minhas viagens, busco uma combinação entre aventura e economia, explorando destinos tanto no
-                    âmbito nacional quanto internacional.</p>
-
-                <p>Ao todo, entre turismo e nomadismo, visitei 18 dos 27 estados brasileiros, sempre buscando autonomia
-                    e evitando destinos superlotados e preferindo experiências autênticas e menos comerciais.</p>
-            </div>
-        </section>
-
-
-
-        <!-- Seção de Garantia -->
-        <section class="garantia">
-            <div class="maximo">
-                <div class="garantia-content">
-                    <h2>GARANTIA DE 7 DIAS COM RISCO ZERO!</h2>
-                    <p>Ainda tem dúvidas? Não se preocupe!</p>
-                    <p>
-                        Se o conteúdo não corresponder ao que você esperava, oferecemos uma garantia de 7 dias.
-                    </p>
-                    <p>
-                        Se não ficar satisfeito, devolveremos seu dinheiro sem burocracia!
-                    </p>
-                </div>
-            </div>
-        </section>
-        <section class="faq">
-            <div class="maximo">
-                <h2>Dúvidas Frequentes</h2>
-                <div class="grid-container">
-                    <div class="item">
-                        <h3><i class="fas fa-question-circle"></i> Quanto tempo após o pagamento terei acesso ao
-                            guia de
-                            viagem?</h3>
-                        <p>Imediato após a aprovação do pagamento.</p>
-                    </div>
-                    <div class="item">
-                        <h3><i class="fas fa-question-circle"></i> Em quais programas eu vou conseguir usar?</h3>
-                        <p>Todo e qualquer leitor de PDF.</p>
-                    </div>
-                </div>
-                <br>
-            </div>
-        </section>
-        <section class="duvidas-whatsapp">
-            <div class="maximo">
-                <div class="maximo">
-                    <h2>AINDA COM DÚVIDAS?</h2>
-                    <p>ME CHAMA NO WHATSAPP!</p>
-                    <p>Caso ainda tenha alguma dúvida, clique no botão abaixo e me chame no WhatsApp. Vamos conversar!
-                        🙂
-                    </p>
-                    <a href="https://wa.me/SEUNUMERODOTELEFONE" class="btn-whatsapp"
-                        onclick="trackEvent('ClicouChamarWhatsapp')">Quero tirar uma dúvida</a>
-                </div>
-            </div>
-        </section>
+    
+        <!-- fim sessao -->
     </main>
-    <div id="modal" class="modal promo-box">
-        <div class="modal-content">
-            <span class="close">&times;</span>
-            <p class="price-strikethrough">DE R$47,00 POR APENAS</p>
-            <p class="price-large">R$27,00</p>
-            <button class="cta-button" onclick="trackEvent('ClicouComprar')">Garanta agora o seu guia</button>
-        </div>
-    </div>
-    <script>
-        function trackEvent(event) {
-            console.log(`Evento disparado: ${event}`);
-            if (event === 'ClicouAdquirirEbook') {
-                fbq('track', 'ClicouAdquirirEbook');
-            } else if (event === 'ClicouComprar') {
-                fbq('track', 'ClicouComprar');
-            } else if (event === 'CronometroExpirou') {
-                fbq('track', 'CronometroExpirou');
-            }
-        }
-        function startCountdown(duration, display) {
-            let timer = duration, minutes, seconds;
-            const interval = setInterval(function () {
-                minutes = parseInt(timer / 60, 10);
-                seconds = parseInt(timer % 60, 10);
-                minutes = minutes < 10 ? "0" + minutes : minutes;
-                seconds = seconds < 10 ? "0" + seconds : seconds;
-                display.textContent = minutes + ":" + seconds;
-                if (--timer < 0) {
-                    clearInterval(interval);
-                    document.getElementById('modal').style.display = 'flex';
-                    trackEvent('CronometroExpirou');
-                }
-            }, 1000);
-        }
-        window.onload = function () {
-            let nineSeconds = 60 * 7, display = document.querySelector('#countdown');
-            startCountdown(nineSeconds, display);
-            const modal = document.getElementById('modal');
-            const closeModal = document.querySelector('.modal .close');
-            closeModal.onclick = function () {
-                modal.style.display = 'none';
-            }
-            window.onclick = function (event) {
-                if (event.target == modal) {
-                    modal.style.display = 'none';
-                }
-            }
-        };
-    </script>
+    <footer>
+        <p>&copy; 2024 Guia de Viagem Norte Argentina. Todos os direitos reservados.</p>
+    </footer>
 </body>
+<script>
+    const elements = checkoutElements.init('inlineCheckout', {
+        offer: 'rw2pabmk'
+    })
+    elements.mount('#inline_checkout')
+</script>
 
 </html>
