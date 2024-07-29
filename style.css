@@ -95,8 +95,8 @@ footer {
 .checkout,
 .autor {
     max-width: 800px;
-    margin: 20px auto;
-    padding: 20px;
+    /* margin: 20px auto; */
+    /* padding: 20px; */
     background-color: var(--branco);
     border-radius: 8px;
 }
@@ -274,3 +274,27 @@ input[type="tel"]:focus {
 .ebook-info strong {
     color: var(--amarelo-dourado-vibrante); /* Usar a cor dourada vibrante para destaque */
 }
+
+.promessa p {
+    padding: 0;
+    margin: 0;
+}
+
+
+/* 
+
+site html 5 de vendas:
+
+header: promessa (lorem ipsum)
+sessao: conteudo do produto (lorem ipsum)
+sessao: checkout (lorem ipsum)
+sessao: autor (lorem ipsum)
+
+me de o index.html completo
+me de o style.css completo
+
+- focado em mobile first
+- focado em desing elegante
+- ter uma paleta de cores bem definida
+- font-family: 'Barlow Condensed', sans-serif;
+ */
