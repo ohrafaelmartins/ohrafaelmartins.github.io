@@ -2,7 +2,15 @@
 <html lang="pt-BR">
 
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Guia completo para viajar de carro ou motorhome ao Norte da Argentina. Inclui dicas práticas, roteiros e três bônus exclusivos.">
+    <meta name="keywords"
+        content="guia de viagem, Norte da Argentina, viagem de carro ou motorhome, dicas de viagem, eBook sobre Argentina, bônus viagem Argentina">
+    <title>Guia Completo para Viajar de Carro ou Motorhome ao Norte da Argentina</title>
 
+    <!-- Favicons -->
     <link rel="apple-touch-icon" sizes="57x57" href="apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="apple-icon-60x60.png">
     <link rel="apple-touch-icon" sizes="72x72" href="apple-icon-72x72.png">
@@ -21,22 +29,22 @@
     <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
 
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description"
-        content="Guia completo para viajar de carro ou motorhome ao Norte da Argentina. Inclui dicas práticas, roteiros e três bônus exclusivos.">
-    <meta name="keywords"
-        content="guia de viagem, Norte da Argentina, viagem de carro ou motorhome, dicas de viagem, eBook sobre Argentina, bônus viagem Argentina">
-    <title>Guia Completo para Viajar de Carro ou Motorhome ao Norte da Argentina</title>
+    <!-- CSS -->
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+        integrity="sha384-..." crossorigin="anonymous">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700&family=Open+Sans:wght@400;700&display=swap">
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700&family=Open+Sans:wght@400;700&display=swap">
-
+    <!-- Preload CSS -->
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+        as="style">
+    <link rel="preload"
+        href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700&family=Open+Sans:wght@400;700&display=swap"
+        as="style">
 </head>
 
 <body>
-
     <header>
         <h1>Guia Completo para Viajar de Carro ou Motorhome ao Norte da Argentina</h1>
     </header>
@@ -89,8 +97,8 @@
                 </ul>
             </article>
         </section>
-        <section class="section" id="bonuses">
 
+        <section class="section" id="bonuses">
             <h2>Bônus ao Comprar o Guia</h2>
             <article class="bonus">
                 <h3><i class="fab fa-whatsapp"></i> Grupo no WhatsApp</h3>
@@ -116,12 +124,13 @@
             </article>
         </section>
 
-        <!-- <section class="section" id="buy">
+        <section class="section" id="buy">
 
             <h2>Adquira seu Guia Agora!</h2>
             <div id="inline_checkout"></div>
 
-        </section> -->
+        </section>
+
 
         <aside class="author">
             <h2>Sobre o Autor</h2>
@@ -142,9 +151,8 @@
                         até o <strong>Atacama</strong>, passando vários dias no <strong>Norte da Argentina</strong>.</p>
                     <p>Durante minhas viagens, busco uma combinação entre aventura e economia, explorando destinos tanto
                         no âmbito nacional quanto internacional.</p>
-                    <p>Ao todo, entre turismo e nomadismo, visitei 18 dos 27 estados brasileiros, sempre buscando
-                        autonomia e evitando destinos superlotados, preferindo experiências autênticas e menos
-                        comerciais.</p>
+                    <p>Ao todo, entre minhas viagens e vivências, já explorei <strong>20 países</strong>, sempre com o
+                        intuito de compartilhar experiências valiosas com outros viajantes.</p>
                 </div>
             </div>
         </aside>
@@ -152,42 +160,39 @@
     </main>
 
     <footer class="footer">
-        <p>&copy; 2024 Guia de Viagem ao Norte da Argentina. Todos os direitos reservados.</p>
-        <p>Autor: <strong>Rafael Martins</strong></p>
-        <p>Instagram: <a href="https://instagram.com/ohrafaelmartins" target="_blank"
-                rel="noopener noreferrer">@ohrafaelmartins</a></p>
+        <p>&copy; 2024 Rafael Martins. Todos os direitos reservados.</p>
     </footer>
 
+    <!-- Meta Pixel Code -->
+    <script>
+        !function (f, b, e, v, n, t, s) {
+            if (f.fbq) return; n = f.fbq = function () {
+                n.callMethod ?
+                    n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+            };
+            if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
+            n.queue = []; t = b.createElement(e); t.async = !0;
+            t.src = v; s = b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t, s)
+        }(window, document, 'script',
+            'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '1552470169006358');
+        fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+            src="https://www.facebook.com/tr?id=1552470169006358&ev=PageView&noscript=1" /></noscript>
+    <!-- End Meta Pixel Code -->
+
+
+    <!--- Required script --->
+    <script src="https://checkout.hotmart.com/lib/hotmart-checkout-elements.js"></script>
+    <script>
+        const elements = checkoutElements.init('inlineCheckout', {
+            offer: 'rw2pabmk'
+        })
+        elements.mount('#inline_checkout')
+    </script>
+
 </body>
-
-<script src="facebook-pixel.js" defer></script>
-<!-- Meta Pixel Code -->
-<script>
-    !function (f, b, e, v, n, t, s) {
-        if (f.fbq) return; n = f.fbq = function () {
-            n.callMethod ?
-                n.callMethod.apply(n, arguments) : n.queue.push(arguments)
-        };
-        if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
-        n.queue = []; t = b.createElement(e); t.async = !0;
-        t.src = v; s = b.getElementsByTagName(e)[0];
-        s.parentNode.insertBefore(t, s)
-    }(window, document, 'script',
-        'https://connect.facebook.net/en_US/fbevents.js');
-    fbq('init', '1552470169006358');
-    fbq('track', 'PageView');
-</script>
-<noscript><img height="1" width="1" style="display:none"
-        src="https://www.facebook.com/tr?id=1552470169006358&ev=PageView&noscript=1" /></noscript>
-<!-- End Meta Pixel Code -->
-
-<!--- Required script --->
-<!-- <script src="https://checkout.hotmart.com/lib/hotmart-checkout-elements.js"></script>
-<script>
-    const elements = checkoutElements.init('inlineCheckout', {
-        offer: 'rw2pabmk'
-    })
-    elements.mount('#inline_checkout')
-</script> -->
 
 </html>
