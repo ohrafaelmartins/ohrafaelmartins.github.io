@@ -23,7 +23,7 @@ header h1 {
 }
 
 .hero {
-    background: url('bg_min_cropped.webp') no-repeat center center;
+    /* background: url('bg_min_cropped.webp') no-repeat center center; */
     background-size: cover;
     color: #fff;
     text-align: center;
@@ -269,7 +269,7 @@ section.bonus-highlight p {
 
 /* Estilo padrão (para telas grandes) */
 .hero {
-    background: url('bg_full.webp') no-repeat center center;
+    /* background: url('bg_full.webp') no-repeat center center; */
     background-size: cover;
     /* Ajusta a imagem ao tamanho do contêiner */
 }
@@ -277,7 +277,7 @@ section.bonus-highlight p {
 /* Ajustes para dispositivos móveis */
 @media (max-width: 600px) {
     .hero {
-        background: url('bg_min_cropped.webp') no-repeat center center;
+        /* background: url('bg_min_cropped.webp') no-repeat center center; */
         background-size: cover;
         /* Ajusta a imagem ao tamanho do contêiner */
     }
