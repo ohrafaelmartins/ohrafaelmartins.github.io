@@ -26,12 +26,16 @@
 }
 
 
+.bio-autor {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 .bio-autor p {
-    font-size: 1.4em;
+    font-size: 1em;
     color: #fff;
     line-height: 1.6;
     margin: 10px 0;
-    text-align: left;
+    text-align: justify;
     font-weight: 300;
     margin-bottom: 20px;
 }

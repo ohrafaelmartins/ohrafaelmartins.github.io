@@ -2,7 +2,7 @@ header {
     background-image: url('bg_full.webp');
     background-size: cover;
     background-position: center;
-    height: 90vh;
+    height: 100vh;
     color: #fff;
     display: flex;
     flex-direction: column;
