@@ -1,0 +1,51 @@
+#para-quem {
+    background-color: #234D20; /* Verde Escuro */
+    color: #fff;
+    padding: 40px 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#para-quem h2 {
+    text-transform: uppercase;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: bold; 
+}
+
+#para-quem ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#para-quem li {
+    font-size: 1em;
+    color: #fff;
+    padding: 10px 0 10px 30px; /* Ajusta o padding para espaço do checkmark */
+    position: relative;
+}
+
+#para-quem li::before {
+    content: '✔️'; /* Checkmark */
+    font-size: 1.2em;
+    color: #4CAF50; /* Verde para o checkmark */
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/* Mobile First */
+@media (max-width: 768px) {
+    #para-quem {
+        padding: 20px;
+    }
+
+    #para-quem li {
+        padding-left: 25px; /* Reduz o espaço para o checkmark */
+    }
+
+    #para-quem li::before {
+        font-size: 1em;
+    }
+}

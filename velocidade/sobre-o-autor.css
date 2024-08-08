@@ -1,0 +1,51 @@
+#sobre-o-autor h2 {
+    text-transform: uppercase;
+}
+
+#sobre-o-autor {
+    background-color: #2E86AB; /* Azul Profundo */
+    color: #fff;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.autor-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.foto-autor {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #fff;
+}
+
+
+.bio-autor p {
+    font-size: 1.4em;
+    color: #fff;
+    line-height: 1.6;
+    margin: 10px 0;
+    text-align: left;
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+
+/* Mobile First */
+@media (max-width: 768px) {
+    #sobre-o-autor {
+        padding: 20px;
+    }
+
+    .foto-autor {
+        width: 120px;
+        height: 120px;
+    }
+
+
+}

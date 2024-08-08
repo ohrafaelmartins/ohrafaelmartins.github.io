@@ -1,0 +1,39 @@
+#cancelar-netflix {
+    color: black;
+    padding: 40px 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: red;
+    height: 40vh;
+}
+
+#cancelar-netflix h2 {
+    text-transform: uppercase;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: bold;
+    padding: 1.3em;
+}
+
+.btn-primary {
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 2em;
+}
+
+.btn-primary:hover {
+    transform: scale(1.05);
+}
+
+/* Mobile First */
+@media (max-width: 768px) {
+    #cancelar-netflix {
+        padding: 20px;
+    }
+
+    .btn-primary {
+        padding: 12px 20px;
+        font-size: 2em;
+    }
+}

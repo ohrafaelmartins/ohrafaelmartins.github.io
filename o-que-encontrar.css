@@ -1,0 +1,82 @@
+/* Estilos para a seção 'Conteúdo' */
+#o-que-encontrar {
+    padding: 40px 20px;
+    color: #333;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: white;
+}
+
+#o-que-encontrar h2 {
+    text-transform: uppercase;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: bold;
+}
+
+.sub-section {
+    background: white;
+    padding: 20px;
+    position: relative;
+    z-index: 1;
+}
+
+/* Estilos específicos para cada 'box' */
+.sub-section li.box {
+    background-color: #f9f9f9; /* Cor de fundo ligeiramente diferente */
+    border: 1px solid #ddd; /* Borda sutil ao redor do box */
+    border-radius: 8px; /* Bordas arredondadas */
+    padding: 15px; /* Espaço interno do box */
+    margin-bottom: 20px; /* Espaço entre boxes */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra leve */
+}
+
+.sub-section li.box h4 {
+    font-size: 1.5em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.sub-section ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: left;
+}
+
+.sub-section ul li {
+    font-size: 1.1em;
+    margin: 10px 0;
+    position: relative;
+    display: flex;
+    align-items: center;
+    font-weight: 300;
+    padding-left: 2em;
+}
+
+.sub-section ul li i {
+    font-size: 1.2em;
+    color: #4CAF50; /* Verde */
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/* Mobile First */
+@media (max-width: 768px) {
+    #o-que-encontrar {
+        padding: 20px;
+    }
+
+    .sub-section {
+        padding: 15px;
+    }
+
+    .sub-section li.box {
+        padding: 10px; /* Reduzir o padding em dispositivos móveis */
+    }
+
+    .sub-section ul li i {
+        font-size: 1em;
+    }
+}

@@ -1,0 +1,61 @@
+#sobre-o-guia {
+    color: white;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+    overflow: hidden;
+}
+
+#sobre-o-guia::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+
+#sobre-o-guia h2 {
+    text-transform: uppercase;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: bold; 
+    z-index: 1;
+}
+
+.topico-box {
+    background: white;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin: 10px 0;
+    font-size: 1.1em;
+    color: #555;
+    position: relative;
+    z-index: 1;
+    text-align: left;
+    padding-left: 40px;
+    font-weight: 400;
+}
+
+.topico-box::before {
+    content: '\2714'; /* Checkmark Unicode */
+    font-size: 1.2em;
+    color: #4CAF50; /* Verde */
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/* Mobile First */
+@media (max-width: 768px) {
+    #sobre-o-guia {
+        padding: 20px;
+    }
+
+
+    .topico-box::before {
+        font-size: 1em;
+    }
+}

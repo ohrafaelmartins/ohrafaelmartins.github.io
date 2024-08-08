@@ -1,0 +1,56 @@
+#o-que-recebe {
+    color: #333;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+    overflow: hidden;
+}
+
+#o-que-recebe h2 {
+    text-transform: uppercase;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: bold; 
+}
+
+#o-que-recebe p {
+    font-size: 1em;
+    position: relative;
+    padding-left: 30px;
+    line-height: 1.5;
+    font-weight: 300;
+}
+
+#o-que-recebe i {
+    font-size: 1.2em;
+    color: #4CAF50; /* Verde */
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.mockup {
+    text-align: center;
+    margin-top: 20px;
+    height: 100%;
+}
+
+.mockup img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    margin: 0 auto;
+}
+
+/* Mobile First */
+@media (max-width: 768px) {
+
+    #o-que-recebe p {
+        padding-left: 20px;
+    }
+
+    #o-que-recebe i {
+        font-size: 1em;
+    }
+}

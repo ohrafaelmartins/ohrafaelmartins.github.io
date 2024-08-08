@@ -1,0 +1,140 @@
+/* Estilos Globais */
+body {
+    font-family: 'Barlow Condensed', sans-serif;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    line-height: 1.6;
+}
+
+header,
+section,
+footer {
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 0 auto;
+}
+
+h1,
+h2,
+h3 {
+    margin: 0 0 10px;
+    font-family: 'Barlow Condensed', sans-serif;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    margin: 5px 0;
+}
+
+a {
+    text-decoration: none;
+    color: #007BFF;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Botões */
+.btn-primary {
+    background-color: #F39237;
+    /* Laranja Vibrante */
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1em;
+}
+
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .btn-primary {
+        padding: 15px;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav li {
+        margin: 10px 0;
+    }
+}
+
+
+
+
+/* 
+cada tag section de forma zebrada precisa ter as cores 
+background: #235784; 
+background: #40a8c4; 
+background: #bcdbdf; 
+background: #f7aa00; 
+*/
+
+
+section:nth-of-type(4n+1) {
+    background-color: #235784;
+    color: #ffffff;
+    /* Cor do texto branca para contraste */
+}
+
+section:nth-of-type(4n+2) {
+    background-color: #40a8c4;
+    color: #ffffff;
+    /* Cor do texto branca para contraste */
+}
+
+section:nth-of-type(4n+3) {
+    background-color: #bcdbdf;
+    color: #000000;
+    /* Cor do texto preta para contraste */
+}
+
+section:nth-of-type(4n+4) {
+    background-color: #f7aa00;
+    color: #000000;
+    /* Cor do texto preta para contraste */
+}
+
+/* Estilização adicional para melhor aparência das seções */
+section {
+    font-weight: bold;
+    text-align: center;
+}
+
+
+/* Estilo padrão para h2 */
+h2 {
+    font-size: 1.8em;
+    /* Tamanho da fonte para telas maiores */
+    margin: 0;
+    /* Opcional: para remover margens padrão e garantir mais controle sobre o layout */
+    padding: 0;
+    /* Opcional: para remover espaçamento padrão */
+    text-align: left;
+}
+
+/* Ajustes para dispositivos móveis */
+@media (max-width: 768px) {
+    h2 {
+        font-size: 1.7em;
+        /* Ajuste o tamanho da fonte para telas menores */
+    }
+}
+
+@media (max-width: 480px) {
+    h2 {
+        font-size: 1.7em;
+        /* Ajuste ainda mais para telas muito pequenas */
+    }
+}

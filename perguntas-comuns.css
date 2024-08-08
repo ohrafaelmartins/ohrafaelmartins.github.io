@@ -1,0 +1,79 @@
+#perguntas-comuns {
+    padding: 40px 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#perguntas-comuns h2{
+    text-transform: uppercase;
+}
+
+.white{
+
+    color: white !important;
+}
+
+
+dl {
+    margin: 0;
+    text-align: left;
+}
+
+dt {
+    font-size: 1.2em;
+    background: white;
+    color: black;
+    cursor: pointer;
+    padding: 10px;
+    margin: 10px 0;
+    position: relative;
+}
+
+.toggle-icon {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1.2em;
+    color: black;
+    transition: transform 0.3s ease;
+}
+
+dd {
+    display: none;
+    background: #E3E3E3; /* Cinza Claro */
+    color: #333;
+    padding: 10px;
+    margin: 0 0 10px;
+    border-left: 4px solid #4CAF50; /* Verde */
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: opacity 0.3s ease, max-height 0.3s ease;
+}
+
+dt.active .toggle-icon {
+    transform: rotate(180deg);
+}
+
+dt.active + dd {
+    display: block;
+    opacity: 1;
+    max-height: 200px;
+}
+
+/* Mobile First */
+@media (max-width: 768px) {
+    #perguntas-comuns {
+        padding: 20px;
+    }
+
+    dt {
+        font-size: 1em;
+        padding: 8px;
+    }
+
+    .toggle-icon {
+        font-size: 1em;
+    }
+
+}
