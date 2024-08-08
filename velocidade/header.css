@@ -1,5 +1,5 @@
 header {
-    background-image: url('bg_full.webp');
+    background-image: url('bg_full_resized.webp');
     background-size: cover;
     background-position: center;
     height: 100vh;
@@ -32,6 +32,7 @@ header h1 {
     max-width: 80%;
     position: relative;
     z-index: 1;
+    font-size: 3.1em;
 }
 
 header h1 .subtitle {
@@ -47,11 +48,11 @@ header h1 .small-text {
 
 .cta-button {
     display: inline-block;
-    padding: 15px 30px;
-    font-size: 2em;
+    padding: 1em;
+    font-size: 2.3em;
     font-weight: bold;
-    color: #000;
-    background: #F39237; /* Laranja Vibrante */
+    color: whitesmoke;
+    background: black; /* Laranja Vibrante */
     border: none;
     text-decoration: none;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -59,6 +60,7 @@ header h1 .small-text {
     margin-top: 20px;
     position: relative;
     z-index: 2;
+    border-radius: 20px;
 }
 
 .cta-button:hover {
@@ -97,8 +99,7 @@ header p {
     }
 
     .cta-button {
-        font-size: 1em;
-        padding: 10px 20px;
+        font-size: 1.5em;
     }
 }
 

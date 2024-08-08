@@ -26,17 +26,13 @@
 }
 
 
-.bio-autor {
-    font-family: Arial, Helvetica, sans-serif;
-}
-
 .bio-autor p {
     font-size: 1em;
-    color: #fff;
+    color: whitesmoke; /* Substitua #FFD700 por uma cor de texto que tenha alto contraste */
     line-height: 1.6;
     margin: 10px 0;
     text-align: justify;
-    font-weight: 300;
+    font-weight: 200;
     margin-bottom: 20px;
 }
 
