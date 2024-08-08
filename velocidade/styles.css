@@ -21,7 +21,6 @@ h1,
 h2,
 h3 {
     margin: 0 0 10px;
-    font-family: 'Barlow Condensed', sans-serif;
 }
 
 ul {
@@ -71,47 +70,13 @@ a:hover {
 }
 
 
-
-
-/* 
-cada tag section de forma zebrada precisa ter as cores 
-background: #235784; 
-background: #40a8c4; 
-background: #bcdbdf; 
-background: #f7aa00; 
-*/
-
-
-section:nth-of-type(4n+1) {
-    background-color: #235784;
-    color: #ffffff;
-    /* Cor do texto branca para contraste */
-}
-
-section:nth-of-type(4n+2) {
-    background-color: #40a8c4;
-    color: #ffffff;
-    /* Cor do texto branca para contraste */
-}
-
-section:nth-of-type(4n+3) {
-    background-color: #bcdbdf;
-    color: #000000;
-    /* Cor do texto preta para contraste */
-}
-
-section:nth-of-type(4n+4) {
-    background-color: #f7aa00;
-    color: #000000;
-    /* Cor do texto preta para contraste */
-}
-
 /* Estilização adicional para melhor aparência das seções */
 section {
     font-weight: bold;
     text-align: center;
     padding-top: 3em;
     padding-bottom: 3em;
+    color: black;
 }
 
 
@@ -132,8 +97,10 @@ h2 {
         font-size: 1.7em;
         /* Ajuste o tamanho da fonte para telas menores */
     }
+
     .preco {
-        font-size: 1em; /* Aumenta o tamanho do texto */
+        font-size: 1em;
+        /* Aumenta o tamanho do texto */
     }
 }
 
@@ -142,14 +109,97 @@ h2 {
         font-size: 1.7em;
         /* Ajuste ainda mais para telas muito pequenas */
     }
+
     .preco {
-        font-size: 1em; /* Aumenta o tamanho do texto */
+        font-size: 1em;
+        /* Aumenta o tamanho do texto */
     }
 }
 
 .preco {
-    font-family: 'Arial', sans-serif;
-    font-size: 5em; /* Aumenta o tamanho do texto */
-    text-align: center; /* Centraliza o texto */
-    font-weight: 900; /* Deixa o texto em negrito */
+    font-size: 5em;
+    /* Aumenta o tamanho do texto */
+    text-align: center;
+    /* Centraliza o texto */
+    font-weight: 900;
+    /* Deixa o texto em negrito */
+}
+
+#perguntas-comuns {
+    padding: 40px 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#perguntas-comuns h2 {
+    text-transform: uppercase;
+}
+
+.white {
+    color: white !important;
+}
+
+dl {
+    margin: 0;
+    text-align: left;
+}
+
+dt {
+    font-size: 1.2em;
+    background: white;
+    color: black;
+    cursor: pointer;
+    padding: 10px;
+    margin: 10px 0;
+    position: relative;
+}
+
+.toggle-icon {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1.2em;
+    color: black;
+    transition: transform 0.3s ease;
+}
+
+dd {
+    display: none;
+    background: #E3E3E3;
+    /* Cinza Claro */
+    color: #333;
+    padding: 10px;
+    margin: 0 0 10px;
+    border-left: 4px solid #4CAF50;
+    /* Verde */
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: opacity 0.3s ease, max-height 0.3s ease;
+}
+
+dt.active .toggle-icon {
+    transform: rotate(180deg);
+}
+
+dt.active+dd {
+    display: block;
+    opacity: 1;
+    max-height: 200px;
+}
+
+/* Mobile First */
+@media (max-width: 768px) {
+    #perguntas-comuns {
+        padding: 20px;
+    }
+
+    dt {
+        font-size: 1em;
+        padding: 8px;
+    }
+
+    .toggle-icon {
+        font-size: 1em;
+    }
 }

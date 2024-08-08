@@ -3,8 +3,6 @@
 }
 
 #sobre-o-autor {
-    background-color: #2E86AB; /* Azul Profundo */
-    color: #fff;
     padding: 40px 20px;
     text-align: center;
 }
@@ -27,8 +25,7 @@
 
 
 .bio-autor p {
-    font-size: 1em;
-    color: whitesmoke; /* Substitua #FFD700 por uma cor de texto que tenha alto contraste */
+    font-size: 1.3em;
     line-height: 1.6;
     margin: 10px 0;
     text-align: justify;

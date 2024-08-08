@@ -4,12 +4,11 @@
     text-align: center;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     background-color: red;
-    
+
 }
 
 #cancelar-netflix h2 {
     text-transform: uppercase;
-    font-family: 'Barlow Condensed', sans-serif;
     font-weight: bold;
     padding: 1.3em;
 }
