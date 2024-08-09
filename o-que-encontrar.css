@@ -9,7 +9,6 @@
 
 #o-que-encontrar h2 {
     text-transform: uppercase;
-    font-family: 'Barlow Condensed', sans-serif;
     font-weight: bold;
 }
 
@@ -22,12 +21,18 @@
 
 /* Estilos específicos para cada 'box' */
 .sub-section li.box {
-    background-color: #f9f9f9; /* Cor de fundo ligeiramente diferente */
-    border: 1px solid #ddd; /* Borda sutil ao redor do box */
-    border-radius: 8px; /* Bordas arredondadas */
-    padding: 15px; /* Espaço interno do box */
-    margin-bottom: 20px; /* Espaço entre boxes */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra leve */
+    background-color: #f9f9f9;
+    /* Cor de fundo ligeiramente diferente */
+    border: 1px solid #ddd;
+    /* Borda sutil ao redor do box */
+    border-radius: 8px;
+    /* Bordas arredondadas */
+    padding: 15px;
+    /* Espaço interno do box */
+    margin-bottom: 20px;
+    /* Espaço entre boxes */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    /* Sombra leve */
 }
 
 .sub-section li.box h4 {
@@ -55,7 +60,8 @@
 
 .sub-section ul li i {
     font-size: 1.2em;
-    color: #4CAF50; /* Verde */
+    color: #4CAF50;
+    /* Verde */
     position: absolute;
     left: 0;
     top: 50%;
@@ -73,7 +79,8 @@
     }
 
     .sub-section li.box {
-        padding: 10px; /* Reduzir o padding em dispositivos móveis */
+        padding: 10px;
+        /* Reduzir o padding em dispositivos móveis */
     }
 
     .sub-section ul li i {

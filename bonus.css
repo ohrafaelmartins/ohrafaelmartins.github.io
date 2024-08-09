@@ -7,33 +7,34 @@
 
 #bonus {
     color: #333;
-    padding: 20px; /* Padding ajustado para dispositivos móveis */
+    padding: 20px;
+    /* Padding ajustado para dispositivos móveis */
     text-align: center;
 }
 
 #bonus h2 {
     text-transform: uppercase;
-    font-family: 'Barlow Condensed', sans-serif;
-    font-weight: bold; 
+    font-weight: bold;
 }
 
 /* Estilo para cada item de bônus */
 .bonus-item {
-    background: #FFF;
+    background: whitesmoke;
     margin: 20px auto;
-    padding: 15px;
-    max-width: 600px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
     display: flex;
     flex-direction: column;
     align-items: center;
+    font-size: 1.6em;
+    border-radius: 8px;
 }
 
 /* Estilo para o ícone dentro de cada item de bônus */
 .bonus-item i {
     font-size: 2em;
-    color: #234D20; /* Verde Escuro */
+    color: #234D20;
+    /* Verde Escuro */
 }
 
 /* Estilo para o conteúdo de cada item de bônus */
@@ -62,6 +63,6 @@
     }
 
     .bonus-item {
-        padding: 20px;
+        padding: 1em;
     }
 }

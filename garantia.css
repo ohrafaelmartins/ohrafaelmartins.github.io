@@ -3,13 +3,12 @@
     color: whitesmoke;
     padding: 3em;
     text-align: center;
-    height: 30vh;
+
 }
 
 #garantia h2 {
     text-transform: uppercase;
-    font-family: 'Barlow Condensed', sans-serif;
-    font-weight: bold; 
+    font-weight: bold;
     margin: o auto;
     padding: 1em;
 }
