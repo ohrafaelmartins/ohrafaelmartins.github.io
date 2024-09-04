@@ -1,29 +1,15 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-
-
+<html lang="pt-BR">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description"
-        content="Guia completo para explorar o Atacama e o norte da Argentina de carro. Inclui roteiro detalhado, dicas úteis e mapas exclusivos.">
-    <meta name="keywords" content="Atacama, norte da Argentina, guia de viagem, roteiro, mapas, dicas, viagem de carro">
-    <meta name="robots" content="index, follow">
-    <meta property="og:title" content="Guia Completo do Atacama e Norte da Argentina">
-    <meta property="og:description"
-        content="Descubra o melhor do Atacama e norte da Argentina com nosso guia abrangente. Inclui roteiros, dicas, mapas e muito mais para uma viagem inesquecível.">
-    <meta property="og:image" content="URL_da_imagem_de_capa_do_guia">
-    <meta property="og:url" content="URL_da_página_do_guia">
-    <meta property="og:type" content="website">
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Guia Completo do Atacama e Norte da Argentina">
-    <meta name="twitter:description"
-        content="Explore o Atacama e o norte da Argentina com nosso guia completo. Roteiros, dicas e mapas detalhados para uma viagem perfeita.">
-    <meta name="twitter:image" content="URL_da_imagem_de_capa_do_guia">
-
-
-    <title>Atacama e Norte Da Argentina de Carro</title>
+        content="Guia Definitivo para Atacama e Norte da Argentina de Carro - Tudo o que você precisa saber para uma viagem épica: roteiro, dicas e mapas para explorar de carro.">
+    <meta name="keywords"
+        content="guia de viagem, Atacama, norte da Argentina, viagem de carro, roteiros, dicas de viagem">
+    <meta name="author" content="Rafael Martins">
+    <title>Guia Definitivo para Atacama e Norte da Argentina de Carro</title>
 
     <!-- Favicons -->
     <link rel="apple-touch-icon" sizes="57x57" href="apple-icon-57x57.png">
@@ -39,398 +25,99 @@
     <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="96x96" href="favicon-96x96.png">
     <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
-    <link rel="manifest" href="manifest.json">
-    <link href="https://fonts.googleapis.com/css2?family=Arvo:wght@400;700&family=Bebas+Neue:wght@400;700&display=swap"
-        rel="stylesheet">
+
+
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Arvo:wght@400;700&family=Bebas+Neue:wght@400;700&display=swap">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-
-    <style>
-        body {
-            margin: 0;
-            font-family: 'Arvo', serif;
-            background-color: #f4f4f4;
-            /* Cor de fundo padrão para o restante da página */
-            overflow-x: hidden;
-        }
-
-        .header {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            height: 100vh;
-            padding: 0 10px;
-            box-sizing: border-box;
-            text-align: center;
-            background: url('bg_full.webp') no-repeat center center fixed;
-            background-size: cover;
-        }
-
-        .header-content {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            width: 100%;
-        }
-
-        
-
-        .header-content h1,
-        .header-content h2 {
-            margin: 0;
-            padding: 0;
-            padding-top: 4em;
-            text-shadow: 2px 2px 5px rgba(255, 255, 255, 0.9);
-            /* Sombra branca */
-            color: #000;
-            /* Texto preto */
-        }
-
-        .header-content h1 {
-            font-family: 'Bebas Neue', sans-serif;
-            font-size: 3.5em;
-            text-transform: uppercase;
-            text-align: center;
-        }
-
-        .header-content h2 {
-            font-family: 'Arvo', serif;
-            font-size: medium;
-            margin-top: 10px;
-            text-align: center;
-            background: rgba(255, 255, 255, 0.7);
-            /* Fundo semi-transparente branco */
-            padding: 15px;
-            border-radius: 5px;
-        }
-
-        .cta-button {
-            display: inline-block;
-            padding: 10px 20px;
-            /* Ajuste no padding */
-            font-size: 1em;
-            /* Ajuste no tamanho da fonte */
-            color: #fff;
-            background-color: blue !important;
-            border: none;
-            border-radius: 5px;
-            text-decoration: none;
-            cursor: pointer;
-            margin-top: 20px;
-            text-transform: uppercase;
-        }
-
-        .cta-button:hover {
-            background-color: #c62828;
-        }
-
-        .mockup {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            width: 100%;
-            margin-top: 20px;
-        }
-
-        .mockup img {
-            max-width: 80%;
-            height: auto;
-        }
-
-
-
-
-        section {
-            padding: 20px;
-            border-bottom: 1px solid #ddd;
-            text-align: left;
-        }
-
-        .section:nth-of-type(even) {
-            background-color: #eee7e7;
-            color: #000;
-        }
-
-        .section h2 {
-            font-family: 'Bebas Neue', sans-serif;
-            font-size: 2.5em;
-            margin-bottom: 10px;
-        }
-
-        .section p {
-            font-family: 'Arvo', serif;
-            font-size: 1em;
-            line-height: 1.6;
-        }
-
-        .offer-price {
-            font-size: 4em !important;
-            color: #e53935;
-            font-family: 'Arvo', serif;
-            font-weight: 900;
-            line-height: 0.1em !important;
-        }
-
-        .bonus-list {
-            list-style-type: none;
-            padding: 0;
-        }
-
-        .bonus-list li {
-            margin-bottom: 10px;
-            font-family: 'Arvo', serif;
-        }
-
-        .cta-button-secondary {
-            display: inline-block;
-            padding: 10px 20px;
-            font-size: 1em;
-            color: #fff;
-            background-color: blue;
-            border: none;
-            border-radius: 5px;
-            text-decoration: none;
-            cursor: pointer;
-            margin-top: 20px;
-        }
-
-        .cta-button-secondary:hover {
-            background-color: #c62828;
-        }
-        .cta-button:hover {
-            background-color: #c62828 !important;
-        }
-
-        @media (min-width: 768px) {
-            .header {
-                flex-direction: row;
-                justify-content: center;
-                align-items: center;
-            }
-
-            .header-content {
-                width: 50%;
-                text-align: left;
-                margin-right: 20px;
-            }
-
-            .mockup {
-                width: 50%;
-                margin-top: 0;
-            }
-
-            .header-content h1 {
-                font-size: 3em;
-            }
-
-            .header-content h2 {
-                font-size: 1.5em;
-            }
-
-            .cta-button {
-                margin-top: 30px;
-            }
-        }
-
-        .netflix {
-            background-color: #c62828 !important;
-            color: white !important;
-        }
-
-        .garantia {
-            background-color: black !important;
-            color: white !important;
-        }
-
-
-        .author-photo {
-            width: 150px;
-            /* Ajuste conforme necessário */
-            height: 150px;
-            /* Ajuste conforme necessário */
-            border-radius: 50%;
-            object-fit: cover;
-            margin-bottom: 20px;
-        }
-
-        article {
-            margin-bottom: 3em;
-            border-bottom: solid 1px;
-        }
-
-        .sobre {
-            margin-top: 6em;
-        }
-    </style>
+    <!-- FontAwesome -->
+    <link rel="icon" href="https://www.example.com/favicon.ico" type="image/x-icon"> <!-- Use um ícone relevante -->
 </head>
 
 <body>
     <header class="header">
         <div class="header-content">
-            <h1>Atacama e Norte Da Argentina de Carro</h1>
-            <h2>Tudo que você precisa saber para uma viagem inesquecível pelo Atacama no Chile e norte da Argentina:
-                roteiro completo, dicas e mapas para explorar de carro</h2>
-            <a href="https://pay.hotmart.com/A93381925H" class="cta-button">Garanta Seu Guia Completo Agora</a>
-        </div>
-        <div class="mockup">
-            <img src="mockbook.webp" alt="Capa do Ebook">
+            <h1>Guia Definitivo para <strong>Atacama</strong> e Norte da <strong>Argentina</strong> de Carro</h1>
+            <p>Tudo o que você precisa saber para uma viagem épica: <strong>roteiro</strong>, dicas e mapas para
+                explorar de carro.</p>
+            <br>
+            <a href="https://pay.hotmart.com/A93381925H?bid=1725408602716" class="cta-button">Adquira Seu Guia
+                Agora!</a>
         </div>
     </header>
 
-    <main>
-        <section class="section sobre">
-            <h2>Sobre o Guia de Viagem</h2>
-            <p>Nosso guia de viagem é a chave para explorar o deserto do Atacama e o norte da Argentina com confiança e
-                entusiasmo. Com <strong>126 páginas de conteúdo completo</strong>, você terá em mãos um material
-                detalhado e cuidadosamente elaborado, baseado na experiência de quem realmente viajou pela região.</p>
-            <p>O guia fornece <strong>dicas valiosas</strong> e <strong>roteiros detalhados</strong>, mas também está
-                repleto de <strong>fotos deslumbrantes</strong> de todos os lugares essenciais.</p>
+    <main class="">
+        <section class="section">
+            <h2>Sobre o Guia</h2>
+            <p><strong>Seu Passaporte para Aventura no Atacama e Norte da Argentina</strong></p>
+            <p>Explore o <strong>Atacama</strong> e o norte da <strong>Argentina</strong> com nosso guia abrangente. Com
+                126 páginas repletas de dicas, <strong>roteiros</strong> e fotos, você terá todas as informações
+                necessárias para planejar uma viagem inesquecível.</p>
         </section>
 
-
-        <section class="section">
-            <h2>Conteúdo do Guia</h2>
-
-            <article>
-                <h3><i class="fas fa-id-card"></i> Documentação</h3>
-                <p>Encontre tudo o que você precisa saber sobre <strong>documentação essencial</strong> para veículos e
-                    motoristas, garantindo que sua viagem esteja em conformidade com as normas.</p>
-            </article>
-
-            <article>
-                <h3><i class="fas fa-map-signs"></i> Roteiro e Planejamento</h3>
-                <p>Explore <strong>roteiros sugeridos</strong>, a <strong>melhor época do ano</strong> para visitar,
-                    principais <strong>cidades</strong> e <strong>atrações turísticas</strong>. Receba também
-                    informações sobre as <strong>condições das estradas</strong> e <strong>segurança em altitudes
-                        elevadas</strong>.</p>
-            </article>
-
-            <article>
-                <h3><i class="fas fa-map-marker-alt"></i> Mapas e Coordenadas</h3>
-                <p>Acesse <strong>mapas detalhados</strong>, <strong>coordenadas geográficas</strong> e <strong>links
-                        para sites oficiais</strong> relacionados à sua viagem. Inclui locais exatos no <strong>Google
-                        Maps</strong> para facilitar a navegação.</p>
-            </article>
-
-            <article>
-                <h3><i class="fas fa-dollar-sign"></i> Custos</h3>
-                <p>Obtenha uma <strong>estimativa de custos</strong> para planejar seu orçamento de forma eficiente.</p>
-            </article>
-
-            <article>
-                <h3><i class="fas fa-lightbulb"></i> Dicas</h3>
-                <p>Receba <strong>dicas sobre acesso à internet</strong>, <strong>aplicativos úteis</strong> e
-                    informações sobre <strong>câmbio na Argentina</strong> e <strong>no Chile</strong>.</p>
-            </article>
-        </section>
-
-
-        <section class="section">
-            <h2><i class=""></i> Complementos</h2>
-
-            <article>
-                <h3><i class="fas "></i> Como usar o aplicativo Windy</h3>
-            </article>
-
-            <article>
-                <h3><i class="fas "></i> Lista com sugestão de campings e hostels</h3>
-                
-            </article>
-
+        <section class="section zebra">
+            <h2>O Que Você Vai Encontrar no Guia</h2>
+            <ul>
+                <li><i class="fas fa-file-alt icon"></i> <strong>Documentação:</strong> Informações essenciais sobre
+                    documentação para veículos e motoristas.</li>
+                <li><i class="fas fa-route icon"></i> <strong>Roteiro e Planejamento:</strong> Roteiros recomendados,
+                    melhores épocas para visitar e dicas de segurança.</li>
+                <li><i class="fas fa-map-marker-alt icon"></i> <strong>Mapas e Coordenadas:</strong> Mapas detalhados e
+                    coordenadas para facilitar sua navegação.</li>
+                <li><i class="fas fa-dollar-sign icon"></i> <strong>Custos:</strong> Estimativas para ajudá-lo a
+                    planejar seu orçamento.</li>
+                <li><i class="fas fa-info-circle icon"></i> <strong>Dicas:</strong> Informações úteis sobre internet,
+                    apps e câmbio.</li>
+                <li><i class="fas fa-bed icon"></i> <strong>Campings e Hostels:</strong> Sugestões de acomodações.</li>
+            </ul>
         </section>
 
         <section class="section">
-            <h2><i class=""></i> Bônus ao Comprar o Guia</h2>
-
-            <article>
-                <h3><i class="fas fa-comments"></i> Grupo no WhatsApp</h3>
-                <p>Junte-se ao nosso <strong>grupo exclusivo no WhatsApp</strong> para receber <strong>notícias e
-                        conteúdos filtrados</strong> sobre o Atacama e o norte da Argentina. Prometemos, é livre de
-                    spam!</p>
-            </article>
-
-            <article>
-                <h3><i class="fas fa-gas-pump"></i> Lista Completa de Postos de Combustível</h3>
-                <p>Receba uma <strong>lista detalhada</strong> com o <strong>endereço de mais de 600 postos de
-                        combustível</strong> em toda a Argentina, facilitando sua viagem sem preocupações.</p>
-            </article>
-
-            <article>
-                <h3><i class="fas fa-book"></i> E-book Extra: Como Evitar Erros Comuns em Buenos Aires</h3>
-                <p>Baixe nosso <strong>e-book extra</strong> com <strong>dicas essenciais</strong> para evitar erros
-                    comuns em Buenos Aires, incluindo câmbio, segurança, compras e transporte público.</p>
-            </article>
+            <h2>Bônus ao Comprar o Guia</h2>
+            <ul>
+                <li><i class="fab fa-whatsapp icon"></i> <strong>Grupo Exclusivo no WhatsApp:</strong> Receba dicas e
+                    atualizações. Não se preocupe, não é spam!</li>
+                <li><i class="fas fa-gas-pump icon"></i> <strong>Lista Completa de Postos de Combustível:</strong> Mais
+                    de 600 postos listados em todo território argentino.</li>
+                <li><i class="fas fa-book icon"></i> <strong>E-book Extra: Evite Erros em Buenos Aires:</strong> Dicas
+                    para evitar erros comuns em Buenos Aires.</li>
+            </ul>
         </section>
-
-        <section class="section">
-            <h2>Oferta Especial</h2>
-            <p class="offer-price">R$ 37,90</p>
-            <p>Adquira o guia completo por um preço promocional e prepare-se para uma aventura inesquecível.</p>
-            <a href="https://pay.hotmart.com/A93381925H" class="cta-button-secondary">Garanta Seu Guia Completo
-                Agora</a>
-        </section>
-
-
-
-        <section class="section">
-            <h2><i class=""></i> Perguntas Comuns</h2>
-
-            <article>
-                <h3><i class="fas fa-print"></i> Posso imprimir o guia?</h3>
-                <p>Sim, o <strong>guia pode ser impresso</strong> para que você possa consultá-lo facilmente durante a
-                    viagem.</p>
-            </article>
-
-            <article>
-                <h3><i class="fas fa-credit-card"></i> Posso parcelar a compra?</h3>
-                <p>Infelizmente, não é possível parcelar. No entanto, o <strong>preço é bastante acessível</strong>,
-                    menor que uma mensalidade da Netflix ou uma pizza.</p>
-            </article>
-
-            <article>
-                <h3><i class="fas fa-star"></i> Qual o diferencial do produto?</h3>
-                <p>O <strong>guia foi criado por alguém que realmente viajou</strong> e vivenciou a experiência de
-                    dirigir no Atacama e norte da Argentina.</p>
-            </article>
-        </section>
-
 
         <section class="section netflix">
-            <h2>Troque um Mês de Netflix por Uma Experiência Inesquecível</h2>
-            <p>Em vez de gastar um mês com entretenimento passageiro, invista em uma experiência que ficará com você
-                para sempre. Aproveite esta oferta especial e transforme sua viagem.</p>
+            <h2>Troque um Mês de <strong>Netflix</strong> por Uma Aventura</h2>
+            <p>Investir em uma experiência inesquecível vale mais do que um mês de entretenimento passageiro. Aproveite
+                nossa oferta!</p>
+            <a href="https://pay.hotmart.com/A93381925H?bid=1725408602716" class="cta-button">Adquira Seu Guia
+                Agora!</a>
         </section>
 
         <section class="section garantia">
-            <h2>7 Dias de Garantia</h2>
-            <p>Experimente o guia sem riscos. Se não estiver satisfeito com o conteúdo dentro de 7 dias, oferecemos uma
-                garantia de devolução total do valor.</p>
+            <h2>Garantia de Satisfação de 7 Dias</h2>
+            <p>Experimente o guia sem riscos! Se não ficar satisfeito, devolvemos o valor em 7 dias.</p>
         </section>
 
         <section class="section">
-            <!-- <h2><i class=""></i> Sobre o Autor</h2> -->
-            <article>
-                <div class="author-info">
-                    <img src="autor.jpg" alt="Rafael Martins" class="author-photo">
-                    <p>Olá! Eu sou <strong>Rafael Martins</strong>, engenheiro de software e nômade digital. Aos 29
-                        anos, adotei um estilo de vida que combina <strong>aventura e economia</strong>.</p>
+            <h2>Sobre o Autor</h2>
 
-                    <p>No primeiro ano de minha jornada, explorei <strong>Portugal, Espanha e Reino Unido</strong>. No
-                        segundo, percorri o Brasil de Sul a Norte pela BR 101, em um mini motorhome adaptado.</p>
+            <p>Olá! Eu sou <strong>Rafael Martins</strong>, engenheiro de software e nômade digital. Aos 29
+                anos, adotei um estilo de vida que combina <strong>aventura e economia</strong>.</p>
 
-                    <p>Em 2019, fiz uma incrível viagem pela <strong>Patagônia de bicicleta</strong>, passando por
-                        Bariloche e os 7 Lagos.</p>
+            <p>No primeiro ano de minha jornada, explorei <strong>Portugal, Espanha e Reino Unido</strong>. No
+                segundo, percorri o Brasil de Sul a Norte pela BR 101, em um mini motorhome adaptado.</p>
 
-                    <p>Na transição de 2023 para 2024, viajei de carro do <strong>Rio Grande do Sul até o
-                            Atacama</strong>, explorando o Norte da Argentina.</p>
+            <p>Em 2019, fiz uma incrível viagem pela <strong>Patagônia de bicicleta</strong>, passando por
+                Bariloche e os 7 Lagos.</p>
 
-                    <p>Minha missão é compartilhar experiências e <strong>dicas valiosas</strong> para quem busca
-                        explorar o mundo com um toque de aventura e praticidade.</p>
-                </div>
-            </article>
+            <p>Na transição de 2023 para 2024, viajei de carro do <strong>Rio Grande do Sul até o
+                    Atacama</strong>, explorando o Norte da Argentina.</p>
+
+            <p>Minha missão é compartilhar experiências e <strong>dicas valiosas</strong> para quem busca
+                explorar o mundo com um toque de aventura e praticidade.</p>
         </section>
-
     </main>
 </body>
 
