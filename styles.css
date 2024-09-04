@@ -1,218 +1,260 @@
-/* Reset básico */
+:root {
+    --primary-color: #ff4500;
+    --secondary-color: #1a1a1a;
+    --text-color: #333;
+    --light-text-color: #fff;
+    --background-color: #f4f4f4;
+    --netflix-red: #e50914;
+    --guarantee-black: #000;
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-li {
-    list-style-type: none;
-    margin-bottom: 0.7em;
+p {
+    padding-bottom: 1em;
+    line-height: 2;
+    font-size: large;
 }
 
-body {
-    font-family: 'Roboto', sans-serif;
+.fold li {
+    padding-bottom: 1em;
     line-height: 1.6;
-    color: #333;
-    padding: 0;
-    margin: 0;
+    font-size: large;
 }
 
-.header {
-    background: url('bg_full.webp') no-repeat center center fixed;
+header {
+    background-image: url('https://www.placeswithoutdoors.com/wp-content/uploads/2022/10/atacama-woestijn-roadtrip.jpg');
     background-size: cover;
     background-position: center;
     height: 100vh;
-    color: #fff;
+}
+
+
+body {
+    font-family: 'Inter', sans-serif;
+    line-height: 1.6;
+    color: var(--text-color);
+    background-color: var(--background-color);
+}
+
+h1,
+h2,
+h3 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+}
+
+.hero {
     display: flex;
-    align-items: flex-start;
+    /* align-items: center; */
     justify-content: center;
-}
-
-.header-content {
-    position: relative;
-    top: 20%;
     text-align: center;
-    padding: 0 1.5rem;
+    color: var(--light-text-color);
+    padding-top: 2em;
     text-shadow: 2px 2px 2px black, 0 0 1em black, 0 0 0.2em black;
-    width: 75%;
-    margin: 0 auto;
 }
 
-.header-content h1 {
-    margin-bottom: 0.5rem;
-    text-transform: uppercase;
-    background: linear-gradient(45deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1));
+
+.hero-content p {
+    font-size: x-large;
 }
 
-.header-content p {
-    text-transform: uppercase;
-    background: linear-gradient(45deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.5));
-    margin: 0 auto;
-}
-
-.section {
-    padding: 1.5rem;
-}
-
-.section h2 {
-    font-size: 1.75rem;
-    border-bottom: 2px solid #333;
-    padding-bottom: 0.5rem;
-    margin-bottom: 1.5rem;
+.hero h1 {
+    margin-bottom: 1rem;
+    letter-spacing: -0.5px;
     text-transform: uppercase;
 }
 
-.section p {
-    margin-bottom: 0.7em;
-    line-height: 2em;
-    font-weight: 300;
+.fold {
+    padding: 2rem 1rem;
 }
 
-.zebra {
-    background-color: #f4f4f4;
+.zebra:nth-child(even) {
+    background-color: var(--background-color);
+}
+
+.zebra:nth-child(odd) {
+    background-color: #fff;
 }
 
 .netflix {
-    background-color: #e50914;
-    color: #fff;
-    padding: 1.5rem;
-    /* border-radius: 0.5rem; */
-    text-transform: uppercase;
+    background-color: var(--netflix-red);
+    color: var(--light-text-color);
 }
 
-.netflix p {
-    text-transform: none;
+.guarantee {
+    background-color: var(--guarantee-black);
+    color: var(--light-text-color);
 }
 
-.netflix .cta-button {
-    background-color: #fff;
-    color: #e50914;
-    border: 1px solid #fff;
-    padding: 0.75rem 1.5rem;
-    /* border-radius: 0.5rem; */
-    font-size: 1.125rem;
-    text-decoration: none;
-    display: inline-block;
-    transition: background-color 0.3s, color 0.3s;
+h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    letter-spacing: -0.5px;
 }
 
-.netflix .cta-button:hover {
-    background-color: #d4d4d4;
-    color: #e50914;
+ul,
+ol {
+    list-style-type: none;
+}
+
+li {
+    margin-bottom: 0.75rem;
 }
 
 .cta-button {
-    background-color: yellowgreen;
-    color: #fff;
-    border: none;
-    padding: 0.75rem 1.5rem;
-    border-radius: 0.5rem;
-    font-size: 1.125rem;
-    text-decoration: none;
     display: inline-block;
-    transition: background-color 0.3s, box-shadow 0.3s;
+    background-color: var(--primary-color);
+    color: var(--light-text-color);
+    padding: 0.8rem 1.5rem;
+    text-decoration: none;
+    border-radius: 0.3rem;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.2s ease;
     text-transform: uppercase;
+    width: 300px;
 }
 
 .cta-button:hover {
-    background-color: #e04e60;
-}
-
-.icon {
-    font-family: 'Font Awesome 6 Free';
-    font-weight: 900;
-    margin-right: 0.5rem;
-    color: #555;
-}
-
-.icon-file-alt::before {
-    content: '\f15c';
-}
-
-.icon-route::before {
-    content: '\f1b3';
-}
-
-.icon-map-marker-alt::before {
-    content: '\f3c5';
-}
-
-.icon-dollar-sign::before {
-    content: '\f0d6';
-}
-
-.icon-info-circle::before {
-    content: '\f05a';
-}
-
-.icon-bed::before {
-    content: '\f7b0';
-}
-
-.icon-whatsapp::before {
-    content: '\f232';
-}
-
-.icon-gas-pump::before {
-    content: '\f52f';
-}
-
-.icon-book::before {
-    content: '\f02d';
-}
-
-@media (max-width: 48rem) {
-    .header-content {
-        width: 95% !important;
-        margin: 0 auto !important;
-    }
-
-    .header-content h1 {
-        font-size: xx-large;
-    }
-
-    .header-content p {
-        font-size: large;
-    }
-
-    .cta-button,
-    .netflix .cta-button {
-        font-size: 1rem;
-        padding: 0.5rem 1rem;
-        text-transform: uppercase;
-    }
-
-    .section {
-        padding: 1rem;
-    }
-}
-
-.garantia {
     background-color: black;
+    color: red;
+    transform: translateY(-2px);
+}
+
+.cta-button-w{
+    background-color: white;
+    color: black;
+}
+
+footer {
+    background-color: var(--secondary-color);
+    color: var(--light-text-color);
+    text-align: center;
+    padding: 2rem;
+}
+
+footer a {
     color: whitesmoke;
 }
 
-.target-audience {
-    list-style: none;
-    padding: 0;
+/* Icons */
+.fas,
+.fab {
+    margin-right: 0.75rem;
+    font-size: 1.2em;
+    color: var(--primary-color);
 }
 
-.target-audience li {
-    background-color: #f4f4f4;
-    margin-bottom: 1rem;
-    padding: 1rem;
+/* Shadows */
+.cta-button {
+    box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.2);
+}
+
+/* Feature list */
+.feature-list {
+    gap: 1.5rem;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.feature-list li {
+    background-color: #fff;
+    padding: 1.5rem;
     border-radius: 0.5rem;
-    /* display: flex; */
-    align-items: center;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
 }
 
-.target-audience i {
-    font-size: 2rem;
-    margin-right: 1rem;
+.feature-list li:hover {
+    transform: translateY(-5px);
 }
 
-.target-audience strong {
-    color: #333;
+.feature-list .fas,
+.feature-list .fab {
+    font-size: 2em;
+    margin-bottom: 0.5rem;
 }
+
+/* Specific section styles */
+#para-quem ul {
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#para-quem li {
+    flex-basis: 100%;
+    margin-bottom: 1.5rem;
+    padding: 1rem;
+    background-color: #fff;
+    border-radius: 0.5rem;
+    box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
+}
+
+#autor p {
+    margin-bottom: 1rem;
+}
+
+/* Media Queries for larger screens */
+@media screen and (min-width: 48rem) {
+    .hero h1 {
+        font-size: 3.5rem;
+    }
+
+
+    h2 {
+        font-size: 2.5rem;
+    }
+
+    #para-quem li {
+        flex-basis: calc(50% - 1rem);
+    }
+}
+
+@media screen and (min-width: 64rem) {
+    .hero-content {
+        max-width: 50rem;
+    }
+
+    .fold {
+        padding: 8rem 4rem;
+    }
+
+    body {
+        font-size: 1.125rem;
+    }
+
+    #para-quem li {
+        flex-basis: calc(33.33% - 1rem);
+    }
+}
+
+section h2 {
+    text-transform: uppercase;
+}
+
+.responsive-image {
+    background-image: url("bg_full.webp");
+}
+
+@media screen and (min-width: 320px) {
+    .responsive-image {
+        background-image: url("bg_full.webp");
+        background-position: center;
+    }
+}
+
+@media screen and (min-width: 640px) {
+    .responsive-image {
+        background-image: url("bg_full.webp");
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .responsive-image {
+        background-image: url("bg_full.webp");
+    }
+}
+
