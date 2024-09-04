@@ -14,6 +14,18 @@
     box-sizing: border-box;
 }
 
+p {
+    padding-bottom: 1em;
+    line-height: 2;
+    font-size: large;
+}
+
+.fold li {
+    padding-bottom: 1em;
+    line-height: 1.6;
+    font-size: large;
+}
+
 header {
     background-image: url('https://www.placeswithoutdoors.com/wp-content/uploads/2022/10/atacama-woestijn-roadtrip.jpg');
     background-size: cover;
@@ -103,11 +115,19 @@ li {
     border-radius: 0.3rem;
     font-weight: bold;
     transition: background-color 0.3s ease, transform 0.2s ease;
+    text-transform: uppercase;
+    width: 300px;
 }
 
 .cta-button:hover {
-    background-color: darken(var(--primary-color), 10%);
+    background-color: black;
+    color: red;
     transform: translateY(-2px);
+}
+
+.cta-button-w{
+    background-color: white;
+    color: black;
 }
 
 footer {
@@ -115,6 +135,10 @@ footer {
     color: var(--light-text-color);
     text-align: center;
     padding: 2rem;
+}
+
+footer a {
+    color: whitesmoke;
 }
 
 /* Icons */
