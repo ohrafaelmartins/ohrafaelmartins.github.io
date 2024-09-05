@@ -6,12 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description"
         content="Explore o Atacama e o norte da Argentina com nosso guia abrangente. Roteiros, dicas e mapas para uma viagem épica de carro.">
-    
+
     <meta name="keywords"
         content="guia de viagem, Atacama, norte da Argentina, viagem de carro, roteiros, dicas de viagem">
     <meta name="author" content="Rafael Martins">
     <title>Guia Definitivo para Atacama e Norte da Argentina de Carro</title>
-    
+
     <!-- Favicons -->
     <link rel="apple-touch-icon" sizes="57x57" href="apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="apple-icon-60x60.png">
@@ -33,6 +33,8 @@
         rel="stylesheet">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <link rel="stylesheet" href="off.css">
 </head>
 
 <body>
@@ -137,7 +139,22 @@
     <footer>
         <span>Rafael Martins | <a href="https://instagram.com/ohrafaelmartins/">Instagram</a></span>
     </footer>
+
+
+    <!-- Popup -->
+    <div id="popup">
+        <span id="closePopup" class="close">&times;</span>
+        <h2>Desconto Exclusivo!</h2>
+        <p>Use o cupom <strong>ATACAMA10</strong> e ganhe 10% de desconto no guia de viagem.</p>
+        <button id="copyButton">Copiar Cupom</button>
+        <p id="copySuccess" style="display:none; color:green;">Cupom copiado!</p>
+        <a href="https://pay.hotmart.com/A93381925H" class="cta">Compre Agora o Guia!</a>
+    </div>
+
+
 </body>
+
+<script src="off.js"></script>
 
 <!-- Meta Pixel Code -->
 
