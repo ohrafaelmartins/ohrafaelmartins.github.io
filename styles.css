@@ -258,3 +258,68 @@ section h2 {
     }
 }
 
+
+
+/* Estilos base para a seção de avaliações (mobile-first) */
+#avaliacoes {
+    padding: 2rem 1rem;
+}
+
+#avaliacoes h2 {
+    font-size: 1.5rem;
+    text-align: center;
+    margin-bottom: 1.5rem;
+    color: var(--text-color);
+}
+
+#avaliacoes img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    display: block;
+    margin: 0 auto 1rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Media query para tablets */
+@media screen and (min-width: 768px) {
+    #avaliacoes {
+        padding: 3rem 2rem;
+    }
+
+    #avaliacoes h2 {
+        font-size: 2rem;
+    }
+
+    #avaliacoes .avaliacoes-container {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+
+    #avaliacoes img {
+        width: calc(50% - 1rem);
+        margin-bottom: 2rem;
+    }
+}
+
+/* Media query para desktops */
+@media screen and (min-width: 1024px) {
+    #avaliacoes {
+        padding: 4rem 2rem;
+    }
+
+    #avaliacoes h2 {
+        font-size: 2.5rem;
+        margin-bottom: 2rem;
+    }
+
+    #avaliacoes .avaliacoes-container {
+        justify-content: space-between;
+    }
+
+    #avaliacoes img {
+        width: calc(33.333% - 1rem);
+    }
+}
