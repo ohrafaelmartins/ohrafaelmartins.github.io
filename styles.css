@@ -16,8 +16,8 @@
 
 p {
     padding-bottom: 1em;
-    line-height: 2;
-    font-size: large;
+    line-height: 1.4;
+    font-size: medium;
 }
 
 .fold li {
@@ -125,7 +125,7 @@ li {
     transform: translateY(-2px);
 }
 
-.cta-button-w{
+.cta-button-w {
     background-color: white;
     color: black;
 }
@@ -322,4 +322,34 @@ section h2 {
     #avaliacoes img {
         width: calc(33.333% - 1rem);
     }
+}
+
+.price-fold {
+    /* background-color: #f8f8f8; */
+    background-color: white;
+    padding: 3rem 1rem;
+    text-align: center;
+}
+
+.price-fold h2 {
+    font-size: larger;
+}
+
+.price {
+    font-size: xx-large;
+    font-weight: bold;
+    color: #ff6600;
+    margin: 1rem 0;
+}
+.price-text {
+    font-size:  medium;
+    font-weight: bold;
+    color: #ff6600;
+    margin: 1rem 0;
+}
+
+.secure-text {
+    font-size: 0.9rem;
+    color: #666;
+    margin-top: 1rem;
 }
