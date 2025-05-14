@@ -357,25 +357,37 @@ p {
 }
 
 .social {
-    margin-top: 0.5rem;
+    margin-top: 1rem;
     display: flex;
-    gap: 1rem;
-    justify-content: center;
+    flex-direction: column;
+    gap: 0.75rem;
+    align-items: center;
 }
 
-.instagram, .youtube, .blog {
+.social div {
+    width: 100%;
+    max-width: 200px;
+}
+
+.instagram,
+.youtube,
+.blog {
     color: white;
     font-weight: 500;
-    display: inline-block;
-    padding: 0.5rem 1.5rem;
+    display: block;
+    padding: 0.5rem 1rem;
     border-radius: 25px;
     background-color: rgba(255, 255, 255, 0.15);
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
     transition: var(--transition);
+    text-align: center;
+    width: 100%;
 }
 
-.instagram:hover, .youtube:hover, .blog:hover {
+.instagram:hover,
+.youtube:hover,
+.blog:hover {
     background-color: rgba(255, 255, 255, 0.25);
     transform: translateY(-3px);
     box-shadow: var(--shadow-sm);
