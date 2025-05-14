@@ -358,9 +358,12 @@ p {
 
 .social {
     margin-top: 0.5rem;
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
 }
 
-.instagram {
+.instagram, .youtube, .blog {
     color: white;
     font-weight: 500;
     display: inline-block;
@@ -372,7 +375,7 @@ p {
     transition: var(--transition);
 }
 
-.instagram:hover {
+.instagram:hover, .youtube:hover, .blog:hover {
     background-color: rgba(255, 255, 255, 0.25);
     transform: translateY(-3px);
     box-shadow: var(--shadow-sm);
