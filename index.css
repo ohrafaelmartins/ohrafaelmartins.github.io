@@ -1026,34 +1026,57 @@ footer {
 @media (max-width: 768px) {
     .container {
         padding: 0 15px;
+        max-width: 100%;
     }
     
     .hero-section {
         padding: 60px 0;
+        text-align: center;
+    }
+    
+    .hero-content {
+        text-align: center;
+        gap: 40px;
+    }
+    
+    .hero-text {
+        text-align: center;
     }
     
     .hero-title {
         font-size: 2.2em;
+        text-align: center;
     }
     
     .hero-description {
         font-size: 1.1em;
+        text-align: center;
     }
     
     .section-title {
         font-size: 2em;
+        text-align: center;
     }
     
     .benefits-grid {
         grid-template-columns: 1fr;
+        gap: 20px;
     }
     
-
+    .benefit-item {
+        justify-content: center;
+        text-align: center;
+    }
+    
+    .price-section {
+        text-align: center;
+    }
     
     .price-container {
         flex-direction: column;
         align-items: center;
         gap: 10px;
+        justify-content: center;
     }
     
     .current-price {
@@ -1067,10 +1090,25 @@ footer {
     .cta-button {
         padding: 15px 30px;
         font-size: 1.1em;
+        width: 100%;
+        max-width: 350px;
+        margin: 0 auto;
+        display: block;
+        text-align: center;
     }
     
     .final-cta-button {
         font-size: 1.2em;
+        width: 100%;
+        max-width: 350px;
+        margin: 0 auto;
+        display: block;
+        text-align: center;
+    }
+    
+    .guarantee-badge {
+        justify-content: center;
+        text-align: center;
     }
     
     .footer-content {
@@ -1081,19 +1119,78 @@ footer {
     .author-image {
         width: 180px;
         height: 180px;
+        margin: 0 auto;
     }
     
     .mockup-device {
         width: 250px;
         height: 320px;
+        margin: 0 auto;
     }
     
-
+    .mockup-placeholder {
+        justify-content: center;
+    }
+    
+    .problem-content {
+        text-align: center;
+    }
+    
+    .problem-text {
+        text-align: center;
+    }
+    
+    .problem-list {
+        text-align: left;
+        max-width: 400px;
+        margin: 0 auto;
+    }
+    
+    .cta-container {
+        text-align: center;
+    }
+    
+    .preview-content {
+        text-align: center;
+    }
+    
+    .preview-item {
+        text-align: left;
+        max-width: 400px;
+        margin: 0 auto 20px;
+    }
 }
 
 @media (max-width: 480px) {
+    .container {
+        padding: 0 10px;
+    }
+    
+    .hero-section {
+        padding: 40px 0;
+    }
+    
     .hero-title {
         font-size: 1.8em;
+        line-height: 1.2;
+        text-align: center;
+    }
+    
+    .hero-description {
+        font-size: 1em;
+        text-align: center;
+        margin-bottom: 25px;
+    }
+    
+    .hero-benefits {
+        margin-bottom: 30px;
+    }
+    
+    .benefit-item {
+        font-size: 0.95em;
+        justify-content: center;
+        text-align: center;
+        margin-bottom: 12px;
     }
     
     .current-price {
@@ -1105,33 +1202,46 @@ footer {
     }
     
     .cta-button {
-        padding: 12px 25px;
+        padding: 12px 20px;
         font-size: 1em;
+        width: 100%;
+        max-width: 300px;
+        margin: 0 auto;
+        display: block;
     }
     
     .final-cta-button {
         font-size: 1.1em;
         padding: 15px;
+        width: 100%;
+        max-width: 300px;
+        margin: 0 auto;
+        display: block;
     }
     
     .section-title {
         font-size: 1.6em;
+        text-align: center;
+        line-height: 1.3;
     }
     
     .mockup-device {
         width: 200px;
         height: 260px;
+        margin: 0 auto;
     }
     
     .author-image {
         width: 150px;
         height: 150px;
+        margin: 0 auto;
     }
     
     .ebook-cover {
         width: 160px;
         height: 220px;
         padding: 20px 15px;
+        margin: 0 auto;
     }
     
     .page {
@@ -1142,14 +1252,69 @@ footer {
     .ebook-cover-hero {
         max-width: 250px;
         transform: perspective(1000px) rotateY(-10deg) rotateX(5deg);
+        margin: 0 auto;
+        display: block;
     }
     
     .ebook-preview-image {
         max-width: 200px;
         transform: perspective(1000px) rotateY(-10deg) rotateX(5deg);
+        margin: 0 auto;
+        display: block;
     }
     
     .problem-image-real {
         max-width: 300px;
+        margin: 0 auto;
+        display: block;
+    }
+    
+    .benefit-card {
+        text-align: center;
+        padding: 25px 15px;
+    }
+    
+    .benefit-card h3 {
+        text-align: center;
+    }
+    
+    .benefit-card p {
+        text-align: center;
+    }
+    
+    .preview-item {
+        max-width: 350px;
+        margin: 0 auto 15px;
+    }
+    
+    .faq-item {
+        margin-bottom: 15px;
+    }
+    
+    .faq-question h4 {
+        font-size: 1em;
+        text-align: left;
+    }
+    
+    .author-content {
+        text-align: center;
+    }
+    
+    .author-text {
+        text-align: center;
+    }
+    
+    .author-text h2,
+    .author-text h3,
+    .author-text p {
+        text-align: center;
+    }
+    
+    .author-credentials {
+        justify-content: center;
+    }
+    
+    .author-social {
+        justify-content: center;
     }
 }
