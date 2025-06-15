@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Guia Completo Atacama e Norte da Argentina - Aventura de Carro/Moto/Motorhome</title>
-    <meta name="description" content="Desbrave o Atacama e Norte da Argentina com guia prático de +120 páginas. Mapas GPS, roteiros testados e dicas de economia. Garantia de 7 dias.">
+    <meta name="description" content="Desbrave o Atacama e Norte da Argentina com guia prático de +115 páginas. Mapas GPS, roteiros testados e dicas de economia. Garantia de 7 dias.">
     <meta name="robots" content="index, follow">
     <meta name="author" content="Rafael Martins">
     
@@ -43,6 +43,7 @@
             padding: 0 20px;
             width: 100%;
             box-sizing: border-box;
+            min-height: 1px;
         }
         .hero-section {
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
@@ -50,6 +51,7 @@
             padding: 80px 0;
             position: relative;
             overflow: hidden;
+            min-height: 760px;
         }
         .hero-content {
             display: grid;
@@ -60,7 +62,7 @@
             z-index: 2;
             width: 100%;
             max-width: 100%;
-            min-height: 500px; /* Evita layout shift */
+            min-height: 600px; /* Evita layout shift */
         }
         .hero-title {
             font-size: 3.5em;
@@ -95,7 +97,11 @@
             gap: 15px;
             margin-bottom: 15px;
             font-size: 1.1em;
-            min-height: 30px; /* Reserva espaço por item */
+            min-height: 35px; /* Reserva espaço por item */
+        }
+        .benefit-item span {
+            min-height: 20px;
+            line-height: 1.4;
         }
         .benefit-item i {
             color: #4caf50;
@@ -169,11 +175,20 @@
             font-size: 1.2em;
         }
         .ebook-cover-hero {
+            width: 300px;
+            height: 475px;
             max-width: 100%;
-            height: auto;
             border-radius: 15px;
             box-shadow: 0 20px 50px rgba(0,0,0,0.3);
             transition: transform 0.3s ease;
+            object-fit: cover;
+        }
+        .mockup-placeholder {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 475px;
+            min-width: 300px;
         }
         @media (max-width: 1024px) {
             .hero-content { grid-template-columns: 1fr; gap: 40px; }
@@ -246,7 +261,7 @@
                     <div class="hero-benefits">
                         <div class="benefit-item">
                             <i class="fas fa-check-circle"></i>
-                            <span>+120 páginas de conteúdo prático</span>
+                            <span>+115 páginas de conteúdo prático</span>
                         </div>
                         <div class="benefit-item">
                             <i class="fas fa-check-circle"></i>
@@ -426,7 +441,10 @@
                 </div>
                 <div class="preview-mockup">
                     <div class="ebook-mockup">
-                        <img src="tatio-mock.jpg" alt="Preview do Guia Atacama" class="ebook-preview-image">
+                        <picture>
+                            <source srcset="tatio-mock.webp" type="image/webp" width="300" height="400">
+                            <img src="tatio-mock.jpg" alt="Preview do Guia Atacama" class="ebook-preview-image" width="300" height="400" loading="lazy">
+                        </picture>
                     </div>
                 </div>
             </div>

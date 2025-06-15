@@ -1,5 +1,5 @@
 // Service Worker para cache de recursos estáticos
-const CACHE_NAME = 'atacama-guide-v2';
+const CACHE_NAME = 'atacama-guide-v3';
 const urlsToCache = [
     '/',
     '/index.html',
@@ -9,7 +9,9 @@ const urlsToCache = [
     '/capa-ebook.jpg',
     '/capa-ebook.webp',
     '/turista-confuso.png',
-    '/turista-confuso.webp'
+    '/turista-confuso.webp',
+    '/tatio-mock.jpg',
+    '/tatio-mock.webp'
 ];
 
 self.addEventListener('install', (event) => {

@@ -20,6 +20,7 @@ body {
     padding: 0 20px;
     width: 100%;
     box-sizing: border-box;
+    min-height: 1px;
 }
 
 
@@ -30,6 +31,7 @@ body {
     padding: 80px 0;
     position: relative;
     overflow: hidden;
+    min-height: 760px;
 }
 
 /* Removido para melhorar performance */
@@ -43,7 +45,7 @@ body {
     z-index: 2;
     width: 100%;
     max-width: 100%;
-    min-height: 500px;
+    min-height: 600px;
 }
 
 .hero-title {
@@ -83,6 +85,13 @@ body {
     gap: 15px;
     margin-bottom: 15px;
     font-size: 1.1em;
+    min-height: 35px;
+}
+
+.benefit-item span {
+    min-height: 20px;
+    line-height: 1.4;
+    display: block;
 }
 
 .benefit-item i {
@@ -196,6 +205,8 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    min-height: 475px;
+    min-width: 300px;
 }
 
 .ebook-cover-hero {
@@ -214,12 +225,13 @@ body {
 }
 
 .ebook-preview-image {
-    max-width: 300px;
-    width: 100%;
-    height: auto;
+    width: 300px;
+    height: 400px;
+    max-width: 100%;
     border-radius: 15px;
     box-shadow: 0 15px 30px rgba(0,0,0,0.2);
     transform: perspective(1000px) rotateY(-15deg) rotateX(10deg);
+    object-fit: cover;
 }
 
 .mockup-device {
@@ -463,6 +475,8 @@ body {
     perspective: 1000px;
     display: flex;
     justify-content: center;
+    min-height: 400px;
+    min-width: 300px;
 }
 
 .ebook-cover {
