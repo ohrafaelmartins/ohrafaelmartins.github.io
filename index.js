@@ -239,7 +239,7 @@ function createExitIntentPopup() {
                         <button onclick="document.getElementById('exit-popup').remove()" style="position: absolute; top: 15px; right: 20px; background: none; border: none; font-size: 24px; cursor: pointer;">&times;</button>
                         <h2 style="color: #ff4757; margin-bottom: 20px;">🔥 ÚLTIMA CHANCE!</h2>
                         <p style="font-size: 18px; margin-bottom: 20px; color: #333;">Não perca esta oferta exclusiva!</p>
-                        <p style="font-size: 16px; margin-bottom: 30px; color: #666;">50% de desconto válido apenas HOJE</p>
+                        
                         <a href="https://pay.hotmart.com/A93381925H?off=r9v0vdc4&checkoutMode=10" target="_blank" onclick="trackCTAClick('GARANTIR DESCONTO AGORA - Exit Intent'); document.getElementById('exit-popup').remove();" style="background: linear-gradient(45deg, #ff6b35, #f7931e); color: white; padding: 15px 30px; border: none; border-radius: 25px; font-size: 16px; font-weight: 700; cursor: pointer; text-decoration: none; display: inline-block;">GARANTIR DESCONTO AGORA</a>
                     </div>
                 </div>
