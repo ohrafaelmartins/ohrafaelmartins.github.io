@@ -1,12 +1,15 @@
 // Service Worker para cache de recursos estáticos
-const CACHE_NAME = 'atacama-guide-v1';
+const CACHE_NAME = 'atacama-guide-v2';
 const urlsToCache = [
     '/',
     '/index.html',
     '/index.css',
     '/index.js',
+    '/icons.css',
     '/capa-ebook.jpg',
-    '/turista-confuso.png'
+    '/capa-ebook.webp',
+    '/turista-confuso.png',
+    '/turista-confuso.webp'
 ];
 
 self.addEventListener('install', (event) => {
@@ -17,13 +20,21 @@ self.addEventListener('install', (event) => {
 });
 
 self.addEventListener('fetch', (event) => {
+    // Ignorar requests para domínios externos (Facebook, etc.)
+    if (!event.request.url.startsWith(self.location.origin)) {
+        return;
+    }
+    
     event.respondWith(
         caches.match(event.request)
             .then((response) => {
                 if (response) {
                     return response;
                 }
-                return fetch(event.request);
+                return fetch(event.request).catch(() => {
+                    // Fallback silencioso para evitar erros no console
+                    return new Response(null, { status: 404 });
+                });
             })
     );
 });

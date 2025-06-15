@@ -365,12 +365,43 @@ function trackFormInteractions() {
     });
 }
 
+function checkResourcesLoading() {
+    // Verificar se imagens WebP estão carregando
+    const webpImages = document.querySelectorAll('source[srcset*=".webp"]');
+    webpImages.forEach((source, index) => {
+        const img = new Image();
+        img.onload = () => console.log(`WebP ${index + 1} carregada com sucesso`);
+        img.onerror = () => console.log(`Erro ao carregar WebP ${index + 1}: ${source.srcset}`);
+        img.src = source.srcset;
+    });
+    
+    // Verificar Facebook Pixel
+    if (typeof fbq === 'undefined') {
+        console.log('Facebook Pixel não carregado (normal se bloqueado por ad-blocker)');
+    } else {
+        console.log('Facebook Pixel carregado com sucesso');
+    }
+    
+    // Verificar Service Worker
+    if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.getRegistrations()
+            .then(registrations => {
+                if (registrations.length > 0) {
+                    console.log('Service Worker ativo:', registrations[0].active?.scriptURL);
+                } else {
+                    console.log('Nenhum Service Worker registrado');
+                }
+            });
+    }
+}
+
 document.addEventListener('DOMContentLoaded', function() {
     initFAQ();
     initScrollAnimations();
     initCTATracking();
     initUrgencyUpdates();
     trackFormInteractions();
+    checkResourcesLoading();
     
     console.log('Landing Page initialized successfully');
 });

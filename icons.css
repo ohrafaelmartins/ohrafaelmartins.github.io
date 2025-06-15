@@ -1,0 +1,62 @@
+/* Ícones customizados - substitui Font Awesome completo */
+/* Apenas os ícones realmente utilizados na página */
+
+@font-face {
+  font-family: 'FontAwesome';
+  src: url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/webfonts/fa-solid-900.woff2') format('woff2');
+  font-weight: 900;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'FontAwesome-Brands';
+  src: url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/webfonts/fa-brands-400.woff2') format('woff2');
+  font-weight: 400;
+  font-display: swap;
+}
+
+.fas, .fab {
+  font-family: 'FontAwesome', sans-serif;
+  font-weight: 900;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.fab {
+  font-family: 'FontAwesome-Brands', sans-serif;
+  font-weight: 400;
+}
+
+/* Ícones específicos utilizados */
+.fa-check-circle::before { content: "\f058"; }
+.fa-download::before { content: "\f019"; }
+.fa-shield-alt::before { content: "\f3ed"; }
+.fa-times-circle::before { content: "\f057"; }
+.fa-piggy-bank::before { content: "\f4d3"; }
+.fa-route::before { content: "\f4d7"; }
+.fa-mobile-alt::before { content: "\f3cd"; }
+.fa-clock::before { content: "\f017"; }
+.fa-gem::before { content: "\f3a5"; }
+.fa-map-marked-alt::before { content: "\f5a0"; }
+.fa-passport::before { content: "\f5ab"; }
+.fa-location-arrow::before { content: "\f124"; }
+.fa-campground::before { content: "\f6bb"; }
+.fa-cloud-sun::before { content: "\f6c4"; }
+.fa-calculator::before { content: "\f1ec"; }
+.fa-user-tie::before { content: "\f508"; }
+.fa-bus::before { content: "\f207"; }
+.fa-tv::before { content: "\f26c"; }
+.fa-book::before { content: "\f02d"; }
+.fa-plane::before { content: "\f072"; }
+.fa-road::before { content: "\f018"; }
+.fa-bicycle::before { content: "\f206"; }
+.fa-car::before { content: "\f1b9"; }
+.fa-chevron-down::before { content: "\f078"; }
+.fa-check::before { content: "\f00c"; }
+.fa-lock::before { content: "\f023"; }
+.fa-medal::before { content: "\f5a2"; }
+.fa-instagram::before { content: "\f16d"; } 
