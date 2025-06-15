@@ -1,8 +1,12 @@
+// Otimização: carregamento lazy dos recursos
 document.addEventListener('DOMContentLoaded', function() {
-    initFAQ();
-    initScrollAnimations();
-    initCTATracking();
-    initUrgencyUpdates();
+    // Executa de forma assíncrona para não bloquear a renderização
+    requestIdleCallback(() => {
+        initFAQ();
+        initScrollAnimations();
+        initCTATracking();
+        initUrgencyUpdates();
+    });
 });
 
 
@@ -160,8 +164,13 @@ function addToCart() {
     }
 }
 
+// Otimização: throttle no scroll para melhor performance
+let scrollTimeout;
 document.addEventListener('scroll', function() {
-    const scrollPercent = (window.scrollY / (document.documentElement.scrollHeight - window.innerHeight)) * 100;
+    if (scrollTimeout) return;
+    scrollTimeout = setTimeout(() => {
+        scrollTimeout = null;
+        const scrollPercent = (window.scrollY / (document.documentElement.scrollHeight - window.innerHeight)) * 100;
     
     if (scrollPercent > 25 && !sessionStorage.getItem('viewed_25')) {
         sessionStorage.setItem('viewed_25', 'true');
@@ -201,6 +210,7 @@ document.addEventListener('scroll', function() {
             });
         }
     }
+    }, 100); // 100ms throttle
 });
 
 window.addEventListener('beforeunload', function(e) {

@@ -5,9 +5,200 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Guia Completo Atacama e Norte da Argentina - Aventura de Carro/Moto/Motorhome</title>
-    <link rel="stylesheet" href="index.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <meta name="description" content="Desbrave o Atacama e Norte da Argentina com guia prático de +120 páginas. Mapas GPS, roteiros testados e dicas de economia. Garantia de 7 dias.">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="Rafael Martins">
+    
+    <!-- Otimizações de performance -->
+    <meta http-equiv="x-dns-prefetch-control" content="on">
+    
+    <!-- Preconnect para otimizar carregamento de recursos externos -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    <link rel="preconnect" href="https://connect.facebook.net">
+    <link rel="preconnect" href="https://pay.hotmart.com">
+    
+    <!-- Prefetch recursos importantes -->
+    <link rel="dns-prefetch" href="//static-media.hotmart.com">
+    
+    <!-- CSS crítico expandido para eliminar render delay -->
+    <style>
+        /* CSS crítico above-the-fold - COMPLETO */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #ffffff;
+            overflow-x: hidden;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+        .hero-section {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 80px 0;
+            position: relative;
+            overflow: hidden;
+        }
+        .hero-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: center;
+            position: relative;
+            z-index: 2;
+            width: 100%;
+            max-width: 100%;
+        }
+        .hero-title {
+            font-size: 3.5em;
+            font-weight: 800;
+            line-height: 1.1;
+            margin-bottom: 20px;
+        }
+        .hero-title .highlight {
+            color: #ffd700;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+        .hero-title .subtitle {
+            display: block;
+            font-size: 0.6em;
+            font-weight: 600;
+            color: #e0e0e0;
+            margin-top: 10px;
+        }
+        .hero-description {
+            font-size: 1.3em;
+            margin-bottom: 30px;
+            line-height: 1.6;
+            color: #f0f0f0;
+        }
+        .hero-benefits {
+            margin-bottom: 40px;
+        }
+        .benefit-item {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin-bottom: 15px;
+            font-size: 1.1em;
+        }
+        .benefit-item i {
+            color: #4caf50;
+            font-size: 1.2em;
+        }
+        .price-section {
+            margin-bottom: 40px;
+        }
+        .price-container {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            margin-bottom: 10px;
+        }
+        .old-price {
+            font-size: 1.8em;
+            text-decoration: line-through;
+            color: #ccc;
+            font-weight: 500;
+        }
+        .current-price {
+            font-size: 3em;
+            font-weight: 800;
+            color: #ffd700;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+        .discount-badge {
+            background: #ff4757;
+            color: white;
+            padding: 8px 16px;
+            border-radius: 25px;
+            font-weight: 700;
+            font-size: 1.1em;
+        }
+        .price-subtitle {
+            color: #e0e0e0;
+            font-size: 1.1em;
+        }
+        .cta-button {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            padding: 20px 40px;
+            font-size: 1.3em;
+            font-weight: 700;
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            text-decoration: none;
+            text-align: center;
+            justify-content: center;
+            background: linear-gradient(45deg, #ff6b35, #f7931e);
+            color: white;
+            box-shadow: 0 10px 30px rgba(255, 107, 53, 0.4);
+        }
+        .guarantee-badge {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-top: 20px;
+            font-size: 1em;
+            color: #e0e0e0;
+        }
+        .guarantee-badge i {
+            color: #4caf50;
+            font-size: 1.2em;
+        }
+        .ebook-cover-hero {
+            max-width: 100%;
+            height: auto;
+            border-radius: 15px;
+            box-shadow: 0 20px 50px rgba(0,0,0,0.3);
+            transition: transform 0.3s ease;
+        }
+        @media (max-width: 1024px) {
+            .hero-content { grid-template-columns: 1fr; gap: 40px; }
+            .hero-title { font-size: 2.8em; }
+        }
+        @media (max-width: 768px) {
+            .hero-section { padding: 60px 0; }
+            .hero-title { font-size: 2.2em; }
+            .hero-description { font-size: 1.1em; }
+            .current-price { font-size: 2.5em; }
+            .cta-button { padding: 15px 30px; font-size: 1.1em; }
+        }
+        @media (max-width: 480px) {
+            .hero-title { font-size: 1.8em; }
+            .current-price { font-size: 2em; }
+            .cta-button { padding: 12px 25px; font-size: 1em; }
+        }
+    </style>
+    
+    <!-- Recursos externos com preload e defer -->
+    <link rel="preload" href="index.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="index.css"></noscript>
+    
+    <!-- Web fonts otimizadas -->
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"></noscript>
+    
+    <!-- Font Awesome com defer -->
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"></noscript>
     
     <!-- Facebook Pixel Code -->
     <script>
@@ -75,7 +266,10 @@
                 </div>
                 <div class="hero-image">
                     <div class="mockup-placeholder">
-                        <img src="capa-ebook.jpg" alt="Capa do Guia Atacama e Norte da Argentina" class="ebook-cover-hero">
+                        <picture>
+                            <source srcset="capa-ebook.webp" type="image/webp" width="300" height="400">
+                            <img src="capa-ebook.jpg" alt="Capa do Guia Atacama e Norte da Argentina" class="ebook-cover-hero" width="300" height="400" loading="eager">
+                        </picture>
                     </div>
                 </div>
             </div>
@@ -108,7 +302,10 @@
                     </div>
                 </div>
                 <div class="problem-image">
-                    <img src="turista-confuso.png" alt="Turista confuso com mapas e documentos" class="problem-image-real">
+                    <picture>
+                        <source srcset="turista-confuso.webp" type="image/webp" width="400" height="300">
+                        <img src="turista-confuso.png" alt="Turista confuso com mapas e documentos" class="problem-image-real" width="400" height="300" loading="lazy">
+                    </picture>
                 </div>
             </div>
         </div>
@@ -276,10 +473,7 @@
         <div class="container">
             <div class="author-content">
                 <div class="author-photo">
-                    <div class="photo-placeholder">
-                        <i class="fas fa-user-circle"></i>
-                        <p>Foto do Rafael</p>
-                    </div>
+                    <img src="https://static-media.hotmart.com/v7t-swriYG5Msq5El1IG2rUF35M=/filters:quality(100):format(webp)/klickart-prod/uploads/media/file/8933304/atacama_e_norte_argetnina_de_carro_em_30_dias.jpg" alt="Rafael Martins no Atacama" class="author-image" width="200" height="200" loading="lazy">
                 </div>
                 <div class="author-text">
                     <h2>Sobre o Autor</h2>
@@ -304,6 +498,12 @@
                         </div>
                     </div>
                     <p><strong>Missão:</strong> Compartilhar experiências e dicas valiosas para quem busca explorar o mundo com aventura e praticidade.</p>
+                    <div class="author-social">
+                        <a href="https://instagram.com/ohrafaelmartins" target="_blank" class="instagram-link" onclick="trackCTAClick('Instagram Rafael Martins')">
+                            <i class="fab fa-instagram"></i>
+                            <span>@ohrafaelmartins</span>
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -461,7 +661,39 @@
         </div>
     </footer>
 
-    <script src="index.js"></script>
+    <!-- JavaScript com defer para não bloquear renderização -->
+    <script src="index.js" defer></script>
+    
+    <!-- Preload de recursos importantes -->
+    <link rel="preload" href="capa-ebook.jpg" as="image">
+    
+    <!-- Preload do JavaScript principal -->
+    <link rel="preload" href="index.js" as="script">
+    
+    <!-- Service Worker para cache (se disponível) -->
+    <script>
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('/sw.js').catch(() => {});
+            });
+        }
+        
+        // Lazy load de imagens não críticas
+        if ('IntersectionObserver' in window) {
+            const lazyImages = document.querySelectorAll('img[loading="lazy"]');
+            const imageObserver = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        const img = entry.target;
+                        img.src = img.dataset.src || img.src;
+                        imageObserver.unobserve(img);
+                    }
+                });
+            });
+            
+            lazyImages.forEach(img => imageObserver.observe(img));
+        }
+    </script>
 </body>
 
 </html>
