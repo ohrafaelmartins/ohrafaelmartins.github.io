@@ -79,14 +79,14 @@ function initCTATracking() {
                 gtag('event', 'begin_checkout', {
                     event_category: 'Ecommerce',
                     event_label: buttonText,
-                    value: 27.00,
+                    value: 37.00,
                     currency: 'BRL'
                 });
             }
             
             if (typeof fbq !== 'undefined') {
                 fbq('track', 'InitiateCheckout', {
-                    value: 27.00,
+                    value: 37.00,
                     currency: 'BRL',
                     content_name: 'Guia Atacama e Norte da Argentina',
                     content_category: 'ebook'
@@ -119,14 +119,14 @@ function trackCTAClick(buttonText) {
         gtag('event', 'begin_checkout', {
             event_category: 'Ecommerce',
             event_label: buttonText,
-            value: 27.00,
+            value: 37.00,
             currency: 'BRL'
         });
     }
     
     if (typeof fbq !== 'undefined') {
         fbq('track', 'InitiateCheckout', {
-            value: 27.00,
+            value: 37.00,
             currency: 'BRL',
             content_name: 'Guia Atacama e Norte da Argentina',
             content_category: 'ebook'
@@ -142,13 +142,13 @@ function addToCart() {
     if (typeof gtag !== 'undefined') {
         gtag('event', 'add_to_cart', {
             event_category: 'Ecommerce',
-            value: 27.00,
+            value: 37.00,
             currency: 'BRL',
             items: [{
                 item_id: 'guia_atacama_argentina',
                 item_name: 'Guia Atacama e Norte da Argentina',
                 category: 'ebook',
-                price: 27.00,
+                price: 37.00,
                 quantity: 1
             }]
         });
@@ -156,7 +156,7 @@ function addToCart() {
     
     if (typeof fbq !== 'undefined') {
         fbq('track', 'AddToCart', {
-            value: 27.00,
+            value: 37.00,
             currency: 'BRL',
             content_name: 'Guia Atacama e Norte da Argentina',
             content_category: 'ebook'
@@ -218,7 +218,7 @@ window.addEventListener('beforeunload', function(e) {
     
     if (scrollPercent > 30 && !sessionStorage.getItem('exit_intent_shown')) {
         e.preventDefault();
-        e.returnValue = 'Espere! Você tem certeza que quer sair?\n\nSua aventura pelo Atacama está a apenas um clique de distância. Não perca esta oportunidade única de economizar 60%!';
+        e.returnValue = 'Espere! Você tem certeza que quer sair?\n\nSua aventura pelo Atacama está a apenas um clique de distância. Não perca esta oportunidade única de economizar 45%!';
         sessionStorage.setItem('exit_intent_shown', 'true');
         return e.returnValue;
     }
